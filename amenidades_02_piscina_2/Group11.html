@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Amenidades 02_piscina 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <img
+      alt="Logo"
+      src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
+      style="width: 0px; height: 0px; display: none"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/components.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Group11.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.6/swiper-bundle.min.js" defer></script>
+    <script>
+      async function handleSlider() {
+        const slider = document.querySelector("#slider");
+
+        // Wait for all content to load before setting maxWidth
+        const imageList = slider.querySelectorAll("img");
+        const onLoadPromiseList = [];
+        for (const image of imageList) {
+          if (image.complete) continue;
+
+          const onLoadPromise = new Promise((resolve, reject) => {
+            if (image.complete) return resolve();
+            image.onload = resolve;
+            image.onerror = resolve;
+          });
+          onLoadPromiseList.push(onLoadPromise);
+        }
+        await Promise.all(onLoadPromiseList);
+
+        // Set max width and height to prevent slider from overflowing
+        slider.style.maxWidth = getComputedStyle(slider).width;
+        slider.style.maxHeight = getComputedStyle(slider).height;
+
+        const sliderParent = slider.parentElement;
+        const sliderTrack = document.querySelector("#slider > .swiper-wrapper");
+        const slides = document.querySelectorAll("#slider > .swiper-wrapper > .swiper-slide");
+
+        // Clone slides for infinite loop
+        const slidesToShow = 1;
+        const slidesRequired = 2;
+        for (let i = 0; slides.length <= slidesToShow && i <= slidesRequired - 1; i++) {
+          const index = i % slidesToShow;
+          const clone = slides[index]?.cloneNode(true);
+          clone?.setAttribute("cloned", "");
+          sliderTrack?.appendChild(clone);
+        }
+
+        const swiper = new Swiper("#slider", {
+          grabCursor: true,
+          loop: true,
+          slidesOffsetAfter: 0,
+          slidesOffsetBefore: 0,
+          slidesPerView: 1,
+          breakpoints: {
+            0: { slidesPerView: 1 },
+            551: { slidesPerView: 1 },
+            1051: { slidesPerView: 1 },
+          },
+        });
+      }
+
+      /**
+       * Hydrate slider #slider
+       */
+      document.addEventListener("DOMContentLoaded", async () => {
+        try {
+          await handleSlider();
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="stackicon-one">
+      <div id="slider" class="slider swiper">
+        <div class="swiper-wrapper">
+          <div class="amenidades02 swiper-slide">
+            <div class="columnicon_one">
+              <div class="arrowleft">
+                <img src="public/images/img_icon.svg" alt="Icon" class="icon_one" />
+              </div>
+            </div>
+            <div class="stackpooldetail">
+              <img src="public/images/img_pool_detail.png" alt="Pooldetail" class="pooldetail_one" />
+              <div class="arrowright">
+                <img src="public/images/img_icon_gray_900.svg" alt="Icon" class="icon_one" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="public/images/img_megaphone.svg" alt="Megaphone" class="megaphone_one" />
+    </div>
+  </body>
+</html>

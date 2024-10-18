@@ -1,0 +1,263 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.mega-menu__link {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.menu {
+  gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-sm);
+  }
+}
+
+.mega-menu__title {
+  font-size: 18px;
+  font-weight: 700;
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
+}
+
+.menu-column {
+  gap: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-xs);
+  }
+}
+
+.menu-link {
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.mega-menu__text {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.es {
+  text-transform: uppercase;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.penthouse {
+  height: 1024px;
+  background: linear-gradient(180deg, #000000cc, #000000cc), url(../public/images/img_penthouse.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.columnes {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  gap: 6px;
+  background-color: var(--gray_400);
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 1050px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.headeres {
+  margin-top: 8px;
+  margin-left: 56px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.rowes {
+  gap: var(--space-sm);
+  align-self: start;
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    align-self: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.dhi-group {
+  cursor: pointer;
+  &:hover > :last-child {
+    display: block;
+  }
+}
+
+.buttonmenu {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrowdown_one {
+  height: 16px;
+  width: 16px;
+}
+
+.dhi-group-1 {
+  position: absolute;
+  top: auto;
+  min-width: 200px;
+  padding-top: var(--space-xs);
+  z-index: 99;
+  display: none;
+  group-hover {
+    display: block;
+  }
+}
+
+.menu-container {
+  background-color: var(--white_A700_01);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius-xs);
+}
+
+.menu-group {
+  gap: var(--space-md);
+  display: flex;
+}
+
+.headerlogo_one {
+  height: 46px;
+  width: 224px;
+  object-fit: contain;
+}
+
+.megaphone_one {
+  height: 40px;
+  width: 40px;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.row {
+  padding-left: 56px;
+  padding-right: 56px;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.rowphpdfone_one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.phpdfone_one {
+  height: 878px;
+  align-self: center;
+  width: 46%;
+  object-fit: contain;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.columnprice {
+  margin-top: 108px;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.price {
+  letter-spacing: 32px;
+  align-self: end;
+}
+
+.container {
+  margin-top: 26px;
+  margin-left: 58px;
+  margin-right: 58px;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.container-1 {
+  padding-left: 56px;
+  padding-right: 56px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.description {
+  color: var(--gray_500) !important;
+  margin-top: 14px;
+  margin-left: 122px;
+  text-align: justify;
+  line-height: 24px;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}

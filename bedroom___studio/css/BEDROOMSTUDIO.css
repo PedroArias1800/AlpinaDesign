@@ -1,0 +1,312 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.m2counter {
+  text-transform: uppercase;
+}
+
+.mega-menu__link {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.menu {
+  gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-sm);
+  }
+}
+
+.mega-menu__title {
+  font-size: 18px;
+  font-weight: 700;
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
+  }
+}
+
+.menu-column {
+  gap: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 550px) {
+    gap: var(--space-xs);
+  }
+}
+
+.menu-link {
+  align-self: center;
+  @media only screen and (max-width: 550px) {
+    font-size: 13px;
+  }
+}
+
+.mega-menu__text {
+  color: var(--black_600) !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price {
+  color: var(--gray_500) !important;
+  text-align: justify;
+  line-height: 24px;
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.class-1-bedroom-studio {
+  height: 1024px;
+  background: linear-gradient(180deg, #000000cc, #000000cc), url(../public/images/img_1_bedroom_studio.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.columnstudiopdf {
+  gap: 76px;
+  background-color: var(--gray_400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  @media only screen and (max-width: 1050px) {
+    gap: 57px;
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 38px;
+  }
+}
+
+.columnes {
+  margin-left: auto;
+  gap: 70px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: end;
+  max-width: 1334px;
+  width: 100%;
+  margin-right: auto;
+  @media only screen and (max-width: 1050px) {
+    gap: 52px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 35px;
+  }
+}
+
+.headeres {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.rowes {
+  gap: var(--space-sm);
+  align-self: start;
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    align-self: auto;
+  }
+}
+
+.dhi-group {
+  cursor: pointer;
+  &:hover > :last-child {
+    display: block;
+  }
+}
+
+.buttonmenu {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrowdown_one {
+  height: 16px;
+  width: 16px;
+}
+
+.dhi-group-1 {
+  position: absolute;
+  top: auto;
+  min-width: 200px;
+  padding-top: var(--space-xs);
+  z-index: 99;
+  display: none;
+  group-hover {
+    display: block;
+  }
+}
+
+.menu-container {
+  background-color: var(--white_A700_01);
+  box-shadow: var(--shadow-xs);
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius-xs);
+}
+
+.menu-group {
+  gap: var(--space-md);
+  display: flex;
+}
+
+.headerlogo_one {
+  height: 46px;
+  width: 224px;
+  object-fit: contain;
+}
+
+.megaphone_one {
+  height: 40px;
+  width: 40px;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.studiomodels {
+  margin-right: 50px;
+  letter-spacing: 32px;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    font-size: 26px;
+  }
+}
+
+.rowm2counter {
+  margin-bottom: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 46px;
+  display: flex;
+  align-self: stretch;
+  align-items: start;
+  max-width: 1208px;
+  width: 100%;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.rowstudiopdfone {
+  margin-top: 38px;
+  flex: 1;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.studiopdfone {
+  height: 486px;
+  width: 100%;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.column_two {
+  align-self: center;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.columnm2counter {
+  gap: 8px;
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: end;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.column {
+  margin-top: 16px;
+  padding-left: 56px;
+  padding-right: 56px;
+  gap: 14px;
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.m2counter-1 {
+  margin-top: 4px;
+  margin-right: 8px;
+  text-transform: uppercase;
+  align-self: end;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.column_one {
+  padding-left: 56px;
+  padding-right: 56px;
+  gap: var(--space-xs);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.m2counter-2 {
+  margin-top: 4px;
+  margin-right: 6px;
+  text-transform: uppercase;
+  align-self: end;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}

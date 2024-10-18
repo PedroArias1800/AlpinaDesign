@@ -1,0 +1,134 @@
+.row {
+  background-color: var(--white_a700);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.rowes {
+  height: 978px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-image: url(../public/images/img_group_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: 20px;
+  }
+}
+
+.headeres {
+  margin-bottom: 860px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  margin-left: 182px;
+  gap: 16px;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.buttonmenu {
+  gap: 8px;
+  display: flex;
+  width: 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  padding-left: 2px;
+  padding-right: 2px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.es {
+  text-transform: uppercase;
+}
+
+.arrowdown_one {
+  height: 16px;
+  width: 16px;
+}
+
+.about_alpina {
+  align-self: end;
+}
+
+.rowvector_one {
+  align-self: center;
+  width: 56%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.vector_one {
+  height: 46px;
+  align-self: end;
+  width: 28%;
+  object-fit: contain;
+}
+
+.megaphone_one {
+  height: 40px;
+  width: 40px;
+}
+
+.rowpiscinas {
+  margin-bottom: 34px;
+  padding-left: 24px;
+  padding-right: 24px;
+  gap: 10px;
+  align-self: end;
+  display: flex;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    align-self: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.piscinas {
+  color: var(--black_900_02) !important;
+  text-transform: uppercase;
+  align-self: end;
+}
+
+.arrowright_one {
+  height: 60px;
+  margin-bottom: 424px;
+  width: 60px;
+}

@@ -1,0 +1,14 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../public/fonts/RedHatDisplayRegular.ttf");
+  font-family: "Red Hat Display";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../public/fonts/RobotoSerifMedium.ttf");
+  font-family: "Roboto Serif";
+  font-weight: 500;
+}
