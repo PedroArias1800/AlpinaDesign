@@ -1,0 +1,325 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.columnnaturalez-1 {
+  gap: var(--space-xs);
+  display: flex;
+  width: 52%;
+  flex-direction: column;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.buttonmenu {
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.description-2 {
+  color: var(--gray_500) !important;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.naturaleza {
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--gray_500) !important;
+  align-self: end;
+  line-height: 24px;
+}
+
+.image_two {
+  height: 424px;
+  width: 50%;
+  object-fit: contain;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------
+  2. Page CSS
+--------------------------------------*/
+.esencia-alpina {
+  height: 1024px;
+  background: linear-gradient(180deg, #000000cc, #000000cc), url(../public/images/img_esencia_alpina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  @media only screen and (max-width: 1050px) {
+    height: auto;
+  }
+}
+
+.stackabout {
+  height: 1024px;
+  overflow: auto;
+  background-color: var(--gray_900);
+  position: relative;
+}
+
+.columnnaturalez {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  gap: 58px;
+  background-color: var(--gray_400);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  top: 0px;
+  height: max-content;
+  margin: auto;
+  @media only screen and (max-width: 1050px) {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 29px;
+  }
+}
+
+.columnabout {
+  gap: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    gap: 63px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    gap: 42px;
+  }
+}
+
+.headerabout {
+  margin-right: 60px;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.container {
+  gap: 16px;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.buttonmenu_one {
+  color: var(--black_900);
+  text-transform: uppercase;
+  font-size: 16px;
+  gap: var(--space-sm);
+  display: flex;
+  width: 16%;
+  background-image: url(../public/images/img_arrowdown.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: calc(100% - 20px);
+  padding: var(--space-md);
+}
+
+.headerlogo_one {
+  height: 46px;
+  width: 224px;
+  object-fit: contain;
+}
+
+.esencia {
+  letter-spacing: 134px;
+}
+
+.arrowright_one {
+  height: 24px;
+  margin-right: 56px;
+  align-self: end;
+  width: 24px;
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
+  }
+}
+
+.rownaturaleza {
+  margin-bottom: 404px;
+  padding-left: 38px;
+  padding-right: 38px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.esencia_alpina {
+  gap: var(--space-lg);
+  display: flex;
+  width: 38%;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
+.rowexclusividad {
+  padding-left: 38px;
+  padding-right: 38px;
+  gap: var(--space-md);
+  display: flex;
+  flex: 1;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.columnexclusivi {
+  gap: var(--space-sm);
+  display: flex;
+  width: 44%;
+  flex-direction: column;
+  align-items: start;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.exclusividad {
+  margin-left: 80px;
+  text-transform: uppercase;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+  }
+}
+
+.columnbienestar {
+  gap: var(--space-xs);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+  }
+}
+
+.container-1 {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: stretch;
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.buttonmenu-2 {
+  padding-left: 42px;
+  padding-right: 42px;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.row_one {
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  position: absolute;
+  bottom: -53px;
+  left: 0px;
+  margin: auto;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.image {
+  height: 424px;
+  width: 330px;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.image_one {
+  height: 478px;
+  width: 330px;
+  align-self: center;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
+
+.row {
+  width: 672px;
+  flex: 1;
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    align-self: stretch;
+    flex-direction: column;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.image_four {
+  height: 424px;
+  width: 346px;
+  object-fit: cover;
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
+  }
+}
