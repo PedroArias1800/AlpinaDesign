@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="./css/AboutApartments.css">
 </head>
 <body>
-    <div class="inicio">
-        <header class="headerRegistro">
+    <div class="inicio2">
+        <header class="header2">
             <div>
                 <select name="language" id="language">
                     <option>EN &#9660;</option>
                     <option>ES &#9660;</option>
                 </select>
-                <p>Menu</p>
+                <p>LOG IN</p>
             </div>
             <img src="./img/logoAlpina2.png" alt="Logo Alpina">
         </header>
-        <div class="AboutSections">
-            <a href="#">ABOUT ALPINA VIDERE &#8594;</a>
-            <a href="#">ABOUT BOQUETE &#8594;</a>
-            <a href="/Registro">APARTMENTS &#8594;</a>
-            <a href="#">CONDO HOTEL &#8594;</a>
+        <div class="sectionFormSignUp">
+            <h3>SIGN UP</h3>
+            <h2>Datos Generales</h2>
+            <form action="/AboutApartments.html" method="GET" class="formSignUp">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre*">
+                <input type="email" name="email" id="email" placeholder="Email*">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido*">
+                <input type="text" name="phone" id="phone" placeholder="Teléfono*">
+                <input type="submit" value="Sign In">
+            </form>
         </div>
     </div>
 </body>
