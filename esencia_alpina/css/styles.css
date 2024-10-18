@@ -1,0 +1,17 @@
+:root {
+  /*------Color variables------*/
+  --black_900: #000000;
+  --black_900_cc: #000000cc;
+  --gray_400: #c4c4c4;
+  --gray_500: #9b9b9b;
+  --gray_600: #6d6d6d;
+  --gray_900: #1e1e1e;
+  --gray_900_01: #1d1b20;
+  --gray_900_c6: #0b2c16c6;
+
+  /*------Spacing variables------*/
+  --space-xs: 8px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 24px;
+}
