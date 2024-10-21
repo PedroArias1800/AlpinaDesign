@@ -282,3 +282,389 @@ input[type='submit']{
     background-color: rgb(220, 218, 217,.4);
     color: white;
 }
+
+/* CSS MENU APTOS PREVIEW MATRIZ */
+.menuAptosPreviewMatriz{
+    margin-top: 4vh;
+}
+.menuAptosPreviewMatriz2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin: auto;
+    width: 90vw;
+    height: 220px;
+    max-height: 40vh;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+.menuAptosPreviewMatriz2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 130px;
+    font-size: 100%;
+    background: rgba(220, 218, 217, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    width: 100%; /* Ocupa el 100% de su contenedor */
+    aspect-ratio: 1; /* Mantiene una relación de aspecto 1:1 para hacer que el ancho y el alto sean iguales */ 
+    text-align: center;
+    border: 3px solid white;
+    border-style: dashed;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+.menuAptosPreviewMatriz2 div:nth-child(1){
+    border: 2px solid #7D0000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(2){
+    border: 2px solid #7D0000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(3){
+    border: 2px solid #134D2D;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(4){
+    border: 2px solid #368A90;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(5){
+    border: 2px solid #000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(6){
+    border: 2px solid #6C4788;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div h3{
+    padding-bottom: 6px;
+    color: black;
+    font-weight: lighter;
+    font-size: medium;
+    border-bottom: 2px solid black;
+}
+.menuApartamentosH2{
+    padding: 2% 0;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2rem;
+    color: white;
+    font-size: xx-large;
+}
+
+.menuAptosPreviewMatriz2 div:hover div:not(:hover){
+    background-color: rgb(220, 218, 217,.10);
+    color: white;
+}
+.menuAptosPreviewMatriz2 div:hover{
+    background-color: rgb(220, 218, 217,.8);
+    color: white;
+}
+.menuAptosPreviewMatriz2 div:nth-child(odd) {
+    align-self: end;
+}
+.menuAptosPreviewMatriz2 div:nth-child(even) {
+    align-self: start;
+}
+.menuAptosPreviewMatriz2Info{
+    position: relative;
+    height: 40vh;
+}
+.menuAptosPreviewMatriz2Info div{
+    width: 20vw;
+    position: absolute;
+    background-color: rgb(50, 218, 61);
+}
+/* Primero de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(1){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 18vw;
+    top: 16vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) h3{
+    font-size: medium;
+    padding: 0 0 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: dashed 2px solid;
+    border-right: dashed 2px solid;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    height: 10vh;
+    width: 5vw;
+    left: 12vw;
+    top: 1vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) div span{
+    position: absolute;
+    right: -6.5px;
+    bottom: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Segundo de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(2){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 45vw;
+    top: 15vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) h3{
+    font-size: medium;
+    padding: 0 0 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 10vw;
+    left: 5.7vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) div span{
+    position: absolute;
+    right: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Tercer de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(3){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 50vw;
+    bottom: 0vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) section{
+    margin-left: 3vw;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) h3{
+    font-size: medium;
+    padding: 0 0 3px 0;
+    text-align: end;
+    margin-right: 6vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 6vw;
+    left: 0vw;
+    top: 1.2vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) div span{
+    position: absolute;
+    left: -6.5px;
+    bottom: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Cuarto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(4){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 0vw;
+    top: 4vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) p{
+    padding: 6px 0 6px 3.1vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 7vw;
+    left: -2vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Quinto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(5){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 0vw;
+    top: 24vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) p{
+    padding: 6px 0 6px 2vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 5vw;
+    left: 0vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Sexto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(6){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 6vw;
+    top: 36vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) p{
+    padding: 6px 0 6px 2vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 5vw;
+    left: 0vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
