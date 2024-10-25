@@ -146,8 +146,8 @@ select {
 .sectionFormLogin, .sectionFormSignUp{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
-    width: 25rem;
-    margin: 6rem auto;
+    width: 30%;
+    margin: 8vh auto;
     padding: 4rem 0;
     border-radius: 50px;
     text-align: center;
@@ -158,7 +158,7 @@ select {
 }
 
 .sectionFormLogin h3, .sectionFormSignUp h3{
-    width: 30%;
+    width: 60%;
     padding: 2% 1%;
     margin: auto;
     background-color: #13421A;
@@ -167,6 +167,10 @@ select {
 }
 .sectionFormLogin h2, .sectionFormSignUp h2{
     margin: 7% 0;
+}
+.formLogin p{
+    text-align: left;
+    font-size: 1.2rem;
 }
 .sectionFormSignUp h1{
     font-size: x-large;
@@ -183,9 +187,9 @@ input[type="email"], input[type="password"],input[type='text']{
     margin: 5% 0;
     padding-bottom: 2%;
 }
-.formSignUp input[type='text']{
+/* .formSignUp input[type='text']{
     margin: 3% 0;
-}
+} */
 .formLogin input::placeholder, .formSignUp input::placeholder{
     color: #B4ADAD;
 }
@@ -200,12 +204,19 @@ input[type='submit']{
     margin: 8% 0 4% 0;
 }
 .formLogin a, .formSignUp a{
-    text-decoration: none;
     color: black;
     font-size: medium;
 }
-
-
+@media (max-width: 636px) {
+    .sectionFormLogin, .sectionFormSignUp{
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    .sectionFormLogin, .sectionFormSignUp{
+        width: 60%;
+    }
+}
 /* CSS REGISTRO */
 .formContent{
     width: 100%;
@@ -834,10 +845,13 @@ input[type='submit']{
     }
     .oneBedMatrizHeader div{
         width: 80%;
-        margin: 10vh auto 4vh auto;
+        margin: 4vh auto 4vh auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr)
-
+    }
+    .imgRender img{
+        width: 100%;
+        padding: 4vh 0;
     }
     .oneBedMatrizHeader div section img{
         width: 70%;
