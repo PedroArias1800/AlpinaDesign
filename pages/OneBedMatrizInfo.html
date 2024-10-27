@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/AboutApartments.css">
+</head>
+<body>
+    <div class="oneBedMatriz">
+        <div class="oneBedMatrizSection0">
+            <div class="InfoOneBedMatrizSection">
+                <div class="InfoOneBedMatrizSection1">
+                    <div>
+                        <img src="../img/logoAlpina.png" alt="Logo Alpina">
+                    </div>
+                    <div>
+                        <h3>Nivel:</h3>
+                        <select name="nivel" id="nivel1">
+                            <option value="000">000</option>
+                            <option value="-100">-100</option>
+                            <option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="InfoOneBedMatrizSection11">
+                    <div>
+                        <h3>Resumen de Áreas</h3>
+                        <table>
+                            <tr>
+                                <td>Area Cerrada</td>
+                                <td>34.02 m2</td>
+                            </tr>
+                            <tr>
+                                <td>Balcón</td>
+                                <td>5.59 m2</td>
+                            </tr>
+                            <tr>
+                                <td><b>Total</b></td>
+                                <td><b>42.32 m2</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h3>Resumen de Espacios</h3>
+                        <ul>
+                            <li>Recámara</li>
+                            <li>Sofa Cama</li>
+                            <li>Laundry</li>
+                            <li>Baño Completo</li>
+                            <li>Kitchinette</li>
+                            <li>Balcón</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Datos Generales</h3>
+                        <table>
+                            <tr>
+                                <td>Apartamento</td>
+                                <td>206</td>
+                            </tr>
+                            <tr>
+                                <td>Elevador</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Nivel</td>
+                                <td>000</td>
+                            </tr></td>
+                            </tr>
+                            <tr>
+                                <td><b>Precio</b></td>
+                                <td><b>$XXXX.XX</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="InfoOneBedMatrizSection">
+                <div class="InfoOneBedMatrizSection2">
+                    <img src="../img/HorizontalRender.jpg" alt="Render Horizontal" class="image">
+                </div>
+                <div class="InfoOneBedMatrizSection22">
+                    <h3>35.89 m2</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        toggleActivarApartamento = (id) => {
+            const seccion = document.getElementsByClassName('oneBedMatrizSection')[id-1]
+            if (seccion.style.backgroundColor == 'rgb(255, 255, 255)'){
+                seccion.style.backgroundColor = 'rgb(227, 242, 225, .502)'
+            } else {
+                seccion.style.backgroundColor = 'rgb(255, 255, 255)'
+            }
+
+            // Cargar lógica para desplegar el diseño "enProceso" en alguna de las pantallas
+            
+        }
+    </script>
+</body>
+</html>

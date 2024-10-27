@@ -94,9 +94,6 @@ body{
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     border: none;
     background: none;
     padding-bottom: 3px;
@@ -750,11 +747,17 @@ input[type='submit']{
     color: black;
     text-decoration: none;
 }
+.oneBedMatrizSection0{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    transition: all ease .35s;
+    justify-content: center;
+}
 .oneBedMatrizHeader{
-    padding-top: 7vh;
-    width: 100%;
+    padding-top: 3vh;
     display: flex;
     justify-content: space-between;
+    transition: all ease .35s;
 }
 .oneBedMatrizHeader div{
     margin-left: 10%;
@@ -767,18 +770,18 @@ input[type='submit']{
     text-align: center;
     border: 0px;
     padding: 1%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .oneBedMatrizHeader div section img{
-    width: 150%;
+    width: 120%;
     margin: auto;
 }
 .oneBedMatrizHeader table{
-    width: 300px;
+    width: 40%;
     margin-right: 5%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.5% 1%;
-    border-radius: 25px;
+    border-radius: 15px;
     border: 2px solid black;
 }
 .oneBedMatrizHeader table tr td{
@@ -789,8 +792,13 @@ input[type='submit']{
 }
 .imgRender img{
     width: 90%;
-    padding: 4vh 5%;
-    height: 65vh;
+    padding: 2vh 5%;
+    height: 28vh;
+}
+.oneBedMatrizSection{
+    transition: all ease .35s;
+    border: 1px solid gray;
+    box-sizing: border-box;
 }
 .infoOneBedMatriz3{
     display: flex;
@@ -799,6 +807,7 @@ input[type='submit']{
     width: 94%;
     margin: 0 3%;
     font-size: 1.2rem;
+    padding-bottom: 2vh;
 }
 .infoOneBedMatriz3 h3{
     letter-spacing: 1.2rem;
@@ -819,19 +828,17 @@ input[type='submit']{
 .infoOneBedMatriz3 input[type='checkbox']{
     display: none;
 }
-.infoOneBedMatriz3 .checkbox1{
+.checkbox1 {
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: 2px solid black;
+    width: 25px; 
+    height: 25px; 
+    border: 1px solid black;
     cursor: pointer;
     position: relative;
     border-radius: 5px;
-    transition: all ease .35;
 }
-.infoOneBedMatriz3 input[type='checkbox']:checked + .checkbox1::after {
-    content: '✔'; /* Marca de verificación */
+.hidden-checkbox:checked + .checkbox1::after {
+    content: '✔';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -865,6 +872,70 @@ input[type='submit']{
         margin: 0 auto;
     }
     .infoOneBedMatriz3{
-        padding-bottom: 2vh;
+        padding-bottom: 5vh;
     }
+    .oneBedMatrizSection0{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    }
+}
+
+/* CSS de OneBedMatrizInfo */
+.InfoOneBedMatrizSection h3{
+    text-decoration: underline;
+}
+.InfoOneBedMatrizSection1 img{
+    width: 40%;
+    margin: 0 30%;
+}
+.InfoOneBedMatrizSection1 h3, .InfoOneBedMatrizSection1 select{
+    font-size: 1.5rem;
+}
+.InfoOneBedMatrizSection1 select{
+    border: 1px solid gray;
+    padding: .5% 6% .5% 3%;
+    border-radius: 5px;
+}
+.InfoOneBedMatrizSection1 div:nth-child(2){
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 4vh 0 0 5%;
+}
+.InfoOneBedMatrizSection11{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    font-size: 1.2rem;
+    padding: 5% 0;
+}
+.InfoOneBedMatrizSection11 div{
+    margin: 0 auto;
+}
+.InfoOneBedMatrizSection11 li{
+    list-style: none;
+}
+.InfoOneBedMatrizSection11 h3{
+    margin-bottom: 1vh;
+}
+.InfoOneBedMatrizSection11 table{
+    width: 100%;
+}
+.InfoOneBedMatrizSection11 table tr:last-child td{
+    padding-top: 20px;
+}
+.InfoOneBedMatrizSection11 table tr td:nth-child(2){
+    text-align: right;
+}
+.InfoOneBedMatrizSection2 img{
+    width: 100%;
+    margin: auto 0;
+    box-sizing: border-box;
+}
+.InfoOneBedMatrizSection22{
+    height: 20vh;
+}
+.InfoOneBedMatrizSection22 h3{
+    letter-spacing: 1.2rem;
+    padding-bottom: 2vh;
+    text-decoration: none;
 }
