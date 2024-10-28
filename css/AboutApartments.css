@@ -273,14 +273,20 @@ input[type='submit']{
 }
 .menuApartamentosMatrices1{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     bottom: 0;
+    width: 90vw;
+    padding: 0 5%;
+    justify-content: center;
 }
 .menuApartamentosMatrices{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Mínimo 200px, máximo 1fr */
     gap: 10px;
-    width: 94vw;
-    margin-left: 3vw;
+    width: 90vw;
 }
 .menuApartamentosMatrices a{
     text-decoration: none;
@@ -891,6 +897,9 @@ input[type='submit']{
     box-sizing: border-box;
     border: 1px solid gray;
 }
+.InfoOneBedMatrizSection img{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
 .InfoOneBedMatrizSection h3{
     text-decoration: underline;
 }
@@ -961,6 +970,8 @@ input[type='submit']{
     border: 2px solid #333;
     border-radius: 10px;
     position: relative;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
   }
   
   .carousel-track {
@@ -1037,3 +1048,19 @@ input[type='submit']{
     background-color: #333;
   }
   
+  @media (max-width: 736px) {
+    .oneBedMatrizSection1{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .InfoOneBedMatrizSection1 div img{
+        width: 100%;
+    }
+    .InfoOneBedMatrizSection{
+        min-height: 50vh;
+        height: auto;
+    }
+    .InfoOneBedMatrizSection div{
+        margin: 5% auto;
+        width: 80%;
+    }
+}
