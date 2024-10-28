@@ -880,27 +880,44 @@ input[type='submit']{
 }
 
 /* CSS de OneBedMatrizInfo */
+.oneBedMatrizSection1{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    transition: all ease .35s;
+    justify-content: center;
+}
+.InfoOneBedMatrizSection{
+    height: 50vh;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
 .InfoOneBedMatrizSection h3{
     text-decoration: underline;
 }
 .InfoOneBedMatrizSection1 img{
-    width: 40%;
-    margin: 0 30%;
+    width: 50%;
 }
 .InfoOneBedMatrizSection1 h3, .InfoOneBedMatrizSection1 select{
     font-size: 1.5rem;
 }
 .InfoOneBedMatrizSection1 select{
     border: 1px solid gray;
-    padding: .5% 6% .5% 3%;
+    padding: .5% 10% .5% 3%;
     border-radius: 5px;
+}
+.InfoOneBedMatrizSection1:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 2vh 10% 0 5%;
 }
 .InfoOneBedMatrizSection1 div:nth-child(2){
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 20px;
-    padding: 4vh 0 0 5%;
+    padding: 2vh 0 0 5%;
 }
 .InfoOneBedMatrizSection11{
     display: grid;
@@ -926,16 +943,97 @@ input[type='submit']{
 .InfoOneBedMatrizSection11 table tr td:nth-child(2){
     text-align: right;
 }
-.InfoOneBedMatrizSection2 img{
-    width: 100%;
-    margin: auto 0;
-    box-sizing: border-box;
+.InfoOneBedMatrizSection2{
+    height: 70%;
+    width: 90%;
+    padding: 4% 5%;
 }
 .InfoOneBedMatrizSection22{
-    height: 20vh;
-}
-.InfoOneBedMatrizSection22 h3{
+    text-decoration: none !important;
     letter-spacing: 1.2rem;
-    padding-bottom: 2vh;
-    text-decoration: none;
+    padding: 0 5%;
 }
+.carousel {
+    width: 86%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 5vh auto 0 auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    text-align: center;
+  }
+  .carousel-item img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 300px; /* Establece un alto fijo */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    user-select: none;
+    pointer-events: none;
+  }
+    
+/* Flechas de navegación mejoradas */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .carousel-control.left {
+    left: 15px;
+  }
+  
+  .carousel-control.right {
+    right: 15px;
+  }
+  
+  /* Efecto hover en las flechas */
+  .carousel-control:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  
+  /* Estilos para las bolitas */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carousel-indicators .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators .indicator.active {
+    background-color: #333;
+  }
+  
