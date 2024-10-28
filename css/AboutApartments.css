@@ -755,7 +755,7 @@ input[type='submit']{
 }
 .oneBedMatrizSection0{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    grid-template-columns: repeat(2, 2fr);
     transition: all ease .35s;
     justify-content: center;
 }
