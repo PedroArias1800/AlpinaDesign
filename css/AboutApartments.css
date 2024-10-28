@@ -284,7 +284,7 @@ input[type='submit']{
 }
 .menuApartamentosMatrices{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(7, 1fr); /* Mínimo 200px, máximo 1fr */
     gap: 10px;
     width: 90vw;
 }
