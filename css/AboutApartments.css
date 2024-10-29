@@ -1064,3 +1064,105 @@ input[type='submit']{
         width: 80%;
     }
 }
+
+/* FLUJO DE LUIS */
+/* ESENCIA */
+.inicio3{
+    background-color: #C4C4C4;
+    height: 100vh;
+}
+.inicio3 .headerAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 96%;
+    margin: auto;
+}
+.inicio3 .headerAbout a{
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.esenciaDiv{
+    position: relative;
+    height: 25vh;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+}
+.esenciaTitle {
+    color: rgba(11, 45, 22, 0.78);
+    display: flex;
+    justify-content: space-between; /* Espacio entre las letras */
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    font-size: 6vw;
+  }
+.esenciaTitle span {
+    flex: 1;
+    text-align: center;
+}
+.esenciaInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto !important;
+    background-color: #C4C4C4;
+}
+.esenciaInfo div{
+    width: 22% !important;
+    margin: 0 auto;
+}
+.esenciaInfo div h3{
+    padding-left: 20%;
+    text-align: right;
+    border-bottom: 2px solid black;
+    margin: 0 40% 2vh 0;
+    font-size: 1.15rem;
+}
+.esenciaInfo div p{
+    padding: 0 0 2vh 10%;
+    width: 90%;
+    font-size: 1rem;
+    color: #414141;
+}
+.esenciaImg{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none
+}
+.esenciaImg div{
+    width: 50%;
+    height: 100% !important;
+}
+.esenciaImg img{
+    white-space: nowrap;
+    height: 100% !important;
+}
+@media (max-width: 900px) {
+    .esenciaInfo{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        padding-bottom: 5vh;
+    }
+    .esenciaInfo div{
+        width: 90% !important;
+        margin: auto;
+    }
+    .esenciaTitle{
+        font-size: 5rem;
+    }
+}
+@media (max-width: 600px) {
+    .esenciaInfo div{
+        width: 80% !important;
+        padding: 2% 0;
+    }
+}
