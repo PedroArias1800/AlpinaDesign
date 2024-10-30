@@ -106,6 +106,7 @@ body{
     height: 327px;
     transition: 1s;
     flex-shrink: 0;
+    border-radius: 40px;
     background: url('../img/ToursVolcan.png') lightgray 50% / cover no-repeat;
 }
 
