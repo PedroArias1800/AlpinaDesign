@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tours</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Tours.css" />
+    <link rel="stylesheet" href="../css/AboutApartments.css" />
+  </head>
+  <body>
+    <div class="inicio3">
+      <header class="headerAbout">
+        <div>
+          <select name="language" id="language">
+            <option>EN</option>
+            <option>ES</option>
+          </select>
+          <a style="text-decoration: none;" href="./AboutApartments.html"><p>Menu</p></a>
+        </div>
+        <img src="../img/logoAlpina.png" alt="Logo Alpina" />
+      </header>
+
+      <div class="collapse-container">
+        <div class="collapseRow">
+          <button class="collapse-button" id="1" onclick="showDiv('div1', id)">
+            Volcan Baru
+          </button>
+          <button class="collapse-button" id="2" onclick="showDiv('div2', id)">
+            Gastronomia
+          </button>
+          <button class="collapse-button" id="3" onclick="showDiv('div3', id)">
+            Senderismo
+          </button>
+          <button class="collapse-button" id="4" onclick="showDiv('div4', id)">
+            Vida Nocturna
+          </button>
+          <button class="collapse-button" id="5" onclick="showDiv('div5', id)">
+            Otros
+          </button>
+        </div>
+        <div>
+          <div id="div1" class="show">
+            <h3>Volcan Baru</h3>
+            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
+            <p>
+              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
+              Barú se localiza en la Provincia de Chiriquí, al norte del país.
+              Nos encontramos con escenarios que van desde paisajes del bosque
+              lluvioso tropical con especies de gran altura hasta productos de
+              la última erupción del Volcán Barú hace millones de años.
+            </p>
+          </div>
+
+          <div id="div2" class="hide">
+            <h3>Gastronomia</h3>
+            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
+            <p>
+              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
+              Barú se localiza en la Provincia de Chiriquí, al norte del país.
+              Nos encontramos con escenarios que van desde paisajes del bosque
+              lluvioso tropical con especies de gran altura hasta productos de
+              la última erupción del Volcán Barú hace millones de años.
+            </p>
+          </div>
+
+          <div id="div3" class="hide">
+            <h3>Senderismo</h3>
+            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
+            <p>
+              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
+              Barú se localiza en la Provincia de Chiriquí, al norte del país.
+              Nos encontramos con escenarios que van desde paisajes del bosque
+              lluvioso tropical con especies de gran altura hasta productos de
+              la última erupción del Volcán Barú hace millones de años.
+            </p>
+          </div>
+
+          <div id="div4" class="hide">
+            <h3>Vida Nocturna</h3>
+            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
+            <p>
+              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
+              Barú se localiza en la Provincia de Chiriquí, al norte del país.
+              Nos encontramos con escenarios que van desde paisajes del bosque
+              lluvioso tropical con especies de gran altura hasta productos de
+              la última erupción del Volcán Barú hace millones de años.
+            </p>
+          </div>
+
+          <div id="div5" class="hide">
+            <h3>Otros</h3>
+            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
+            <p>
+              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
+              Barú se localiza en la Provincia de Chiriquí, al norte del país.
+              Nos encontramos con escenarios que van desde paisajes del bosque
+              lluvioso tropical con especies de gran altura hasta productos de
+              la última erupción del Volcán Barú hace millones de años.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showDiv(divId, buttonId) {
+        var divs = ["div1", "div2", "div3", "div4", "div5"];
+        var butts = ["1", "2", "3", "4", "5"];
+
+        // Hide all divs
+        divs.forEach(function (id) {
+          document.getElementById(id).classList.remove("show");
+          document.getElementById(id).classList.add("hide");
+          console.log(id);
+        });
+
+        //Hide button colors
+        butts.forEach(function (id) {
+          console.log(id);
+          document.getElementById(id).classList.add("normal");
+          document.getElementById(id).classList.remove("darken");
+        });
+
+        // Show the selected div
+        document.getElementById(buttonId).classList.add("darken");
+        document.getElementById(buttonId).classList.remove("normal");
+        console.log(buttonId);
+        document.getElementById(divId).classList.remove("hide");
+        document.getElementById(divId).classList.add("show");
+      }
+    </script>
+  </body>
+</html>
