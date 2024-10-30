@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia</title>
+    <link rel="stylesheet" href="../css/AboutApartments.css">
+</head>
+<body>
+    <div class="inicio3">
+        <header class="headerAbout">
+            <div>
+                <select name="language" id="language">
+                    <option>EN</option>
+                    <option>ES</option>
+                </select>
+                <a href="./AboutApartments.html">ABOUT ALPINA</p>
+            </div>
+            <img src="../img/logoAlpina.png" alt="Logo Alpina">
+        </header>
+        <div class="esenciaDiv">
+            <div class="atrasModels">
+                <a href="./MenuApartamentosMatriz.html">🡰</a>
+            </div>
+            <div class="esenciaTitle">
+                <h1>esencia</h1>
+            </div>
+        </div>
+        <div class="esenciaInfo">
+            <div>
+                <h3>NATURALEZA</h3>
+                <p>Envuelvete en una experiencia
+                    residencial inmersiva, donde la 
+                    naturaleza  envuelve con su serenidad.</p>
+            </div>
+            <div>
+                <h3>CONFORT</h3>
+                <p>Los aromas del entorno te
+                    revitalizan y la calidez del clima
+                    te acoje.</p>
+            </div>
+            <div>
+                <h3>EXCLUSIVIDAD</h3>
+                <p>Paisajes majestuosos, con  una oferta
+                    culinaria exquisita a tu alcance, entorno
+                    que combina lujo y tranquilidad.</p>
+            </div>
+            <div>
+                <h3>BIENESTAR</h3>
+                <p>Apartamentos únicos en. Boquete, rodeado
+                    de paisajes cultivadores, aromas frescos. Diseñados
+                    para brindar confort y equilibrio en cada detalle.</p>
+            </div>
+        </div>
+        <div class="esenciaImg">
+            <div>
+                <img src="../img/esencia/esencia2.png" alt="Imagen 2 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia3.png" alt="Imagen 3 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia4.png" alt="Imagen 4 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia5.png" alt="Imagen 5 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia2.png" alt="Imagen 2 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia3.png" alt="Imagen 3 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia4.png" alt="Imagen 4 del Carousel">
+            </div>
+            <div>
+                <img src="../img/esencia/esencia5.png" alt="Imagen 5 del Carousel">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+  const heading = document.getElementsByClassName('esenciaTitle')[0];
+  const text = heading.textContent;
+  heading.innerHTML = '';
+
+  // Crear un span para cada letra y añadirlo al h1
+  [...text].forEach(char => {
+    if (char != ' ' && char != '' && char != '\n'){
+        const span = document.createElement('span');
+        span.textContent = char;
+        heading.appendChild(span);
+    }
+  });
+});
+    </script>
+</body>
+</html>
