@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-alpina {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Mantiene el contenedor al 100% de la altura de la vista */
+  position: relative; /* Asegúrate de que el contenedor tenga posición relativa */
+}
+
+.stackvector_one { 
+  min-height: 100vh; /* Cambiado de height a min-height para ocupar el 100% de la altura de la ventana */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--white_a700);
+  background-image: url(../public/images/img_start_page.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.columnvector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Cambiado a 'flex-start' para correr hacia la izquierda */
+  width: 100%;
+  padding-left: 20px; /* Añadido para dar espacio desde la izquierda */
+}
+
+.vector_one {
+  height: 46px;
+  width: 16%;
+  object-fit: contain;
+  align-self: flex-end; /* Cambiado a 'flex-start' para alinearlo a la izquierda */
+  margin-bottom: 16px; /* Margen inferior para espacio con el título */
+  margin-right: 50px; /* Añadido para correr un poco más a la izquierda */
+}
+
+.titleheader_one {
+  color: var(--white_a700);
+  padding-left: 14px;
+  padding-right: 14px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  background-color: rgba(209, 228, 216, 0.42); /* Color ajustado para el título */
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border: 1px solid var(--black_900);
+  margin: 200px 0 200px 10px; /* Corre el título un poco hacia la izquierda */
+}
+
+/* Botón CONTINUE en la parte inferior */
+.continue {
+  color: var(--white_a700);
+  padding: 12px 24px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgba(209, 228, 216, 0.42) !important; /* Forzamos el color */
+  text-align: center;
+  border-radius: var(--radius-xs);
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid var(--black_900);
+  transition: box-shadow 0.3s;
+  margin-top: 400px;
+  align-self: flex-end;
+  margin-right: 50px;
+}
+
+.continue:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.continue:active {
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de presión al hacer clic */
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .vector_one {
+    width: 30%;
+  }
+
+  .titleheader_one {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .continue {
+    padding: 10px 20px;
+  }
+}

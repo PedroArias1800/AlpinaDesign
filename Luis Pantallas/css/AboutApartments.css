@@ -1,0 +1,1073 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100% !important;
+}
+.inicioLogin{
+    height: 100% !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.9) 100%), /* Degradado transparente a oscuro */
+        url('../img/back01.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inicio{
+    height: 100% !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%), /* Degradado transparente a oscuro */
+        url('../img/back02.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inicio2{
+    height: 100% !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), /* Degradado transparente a oscuro */
+        url('../img/back01.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerAbout{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 12vh;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.headerAbout img{
+    width: 15rem;
+    margin-right: 5%;
+}
+.headerAbout div{
+    margin-left: 10%;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 12vh;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+.header2 img{
+    width: 12rem;
+}
+.header2 div{
+    position: absolute;
+    left: 10%;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+@media (max-width: 736px) {
+    .header2{
+        width: 80%;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+    .header2 div{
+        position: static;
+        left: 0;
+        display: flex;
+        align-items: end;
+        gap: 20px;
+    }
+    .menuApartamentosMatrices1{
+        position: relative !important;
+        margin-top: 10%;
+    }
+}
+
+select {
+    border: none;
+    background: none;
+    padding-bottom: 3px;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+}
+
+.AboutSections{
+    width: 25rem;
+    height: 60vh;
+    margin-left: 5%;
+    margin-top: 25vh;
+}
+.AboutSections a{
+    text-decoration: none;
+}
+.AboutSections a p{
+    transition: all 0.3s ease;
+    width: 90%;
+    text-decoration: none;
+    padding: 3% 0 3% 5%;
+    background-color: #D1E4D96B;
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    border: 1px solid black;
+    text-align: left;
+}
+.AboutSections a p span{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 1vw;
+}
+
+.AboutSections:hover a p:not(:hover){
+    background-color: rgb(209, 228, 217, .32);
+    color: white;
+}
+.AboutSections a p:hover{
+    background-color: rgb(209, 228, 217, .6);
+    color: white;
+}
+
+
+/* CSS LOGIN */
+.sectionFormLogin, .sectionFormSignUp{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    width: 30%;
+    margin: 8vh auto;
+    padding: 4rem 0;
+    border-radius: 50px;
+    text-align: center;
+}
+.sectionFormSignUp{
+    margin: 4rem auto;
+    padding: 2rem 0;
+}
+
+.sectionFormLogin h3, .sectionFormSignUp h3{
+    width: 60%;
+    padding: 2% 1%;
+    margin: auto;
+    background-color: #13421A;
+    color: white;
+    border-radius: 25px;
+}
+.sectionFormLogin h2, .sectionFormSignUp h2{
+    margin: 7% 0;
+}
+.formLogin p{
+    text-align: left;
+    font-size: 1.2rem;
+}
+.sectionFormSignUp h1{
+    font-size: x-large;
+}
+.formLogin, .formSignUp {
+    width: 80%;
+    margin: auto;
+}
+input[type="email"], input[type="password"],input[type='text']{
+    border: none;
+    border-bottom: 2px solid #D3D3D3;
+    font-size: large;
+    width: 100%;
+    margin: 5% 0;
+    padding-bottom: 2%;
+}
+/* .formSignUp input[type='text']{
+    margin: 3% 0;
+} */
+.formLogin input::placeholder, .formSignUp input::placeholder{
+    color: #B4ADAD;
+}
+input[type='submit']{
+    width: 94%;
+    background-color: #2C2C2C;
+    color: white;
+    text-align: center;
+    padding: 3% 0;
+    font-size: large;
+    border-radius: 10px;
+    margin: 8% 0 4% 0;
+}
+.formLogin a, .formSignUp a{
+    color: black;
+    font-size: medium;
+}
+@media (max-width: 636px) {
+    .sectionFormLogin, .sectionFormSignUp{
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    .sectionFormLogin, .sectionFormSignUp{
+        width: 60%;
+    }
+}
+/* CSS REGISTRO */
+.formContent{
+    width: 100%;
+    gap: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* CSS MENU APARTAMENTOS MATRIZ */
+.header3{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 94%;
+    padding: 0 3%;
+    height: 12vh;
+    font-weight: lighter;
+    font-size: x-large;
+    font-size: 1.2rem;
+
+}
+
+.header3 img{
+    width: 12rem;
+}
+.header3 div{
+    position: absolute;
+    left: 3%;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    margin-bottom: 1rem;
+    color: white;
+}
+.header3 select{
+    color: white;
+    border-bottom: 2px solid white;
+}
+.header3 select option{
+    color: black;
+    padding: 0 20%;
+    background-color: transparent !important;
+    border-bottom: 2px solid white;
+}
+.header3 a{
+    position: absolute;
+    right: 3%;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all ease .30s;
+    border-bottom: 2px solid transparent;
+}
+.header3 a:hover{
+    border-bottom: 2px solid white;
+}
+.menuApartamentosMatrices1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    width: 90vw;
+    padding: 0 5%;
+    justify-content: center;
+}
+.menuApartamentosMatrices{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Mínimo 200px, máximo 1fr */
+    gap: 10px;
+    width: 90vw;
+}
+.menuApartamentosMatrices a{
+    text-decoration: none;
+    background-color: rgb(220, 218, 217,.25);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 20px;
+    text-align: center;
+    padding: 8rem 0 1.2rem 0;
+    border: 3px solid white;
+    border-style: dashed;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+.menuApartamentosMatrices a h3{
+    color: white;
+    font-weight: lighter;
+}
+.menuApartamentosH2{
+    padding: 2% 0;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2rem;
+    color: white;
+    font-size: xx-large;
+}
+
+.menuApartamentosMatrices:hover a:not(:hover){
+    background-color: rgb(220, 218, 217,.20) !important;
+    color: white;
+}
+.menuApartamentosMatrices a:hover{
+    background-color: rgb(220, 218, 217,.4) !important;
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(1){
+    background-color: rgb(220, 218, 217,.20);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(2){
+    background-color: rgb(220, 218, 217,.28);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(3){
+    background-color: rgb(220, 218, 217,.35);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(4){
+    background-color: rgb(220, 218, 217,.4);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(5){
+    background-color: rgb(220, 218, 217,.35);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(6){
+    background-color: rgb(220, 218, 217,.28);
+    color: white;
+}
+.menuApartamentosMatrices a:nth-child(7){
+    background-color: rgb(220, 218, 217,.20);
+    color: white;
+}
+
+/* CSS MENU APTOS PREVIEW MATRIZ */
+.menuAptosPreviewMatriz{
+    margin-top: 4vh;
+}
+.menuAptosPreviewMatriz2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin: auto;
+    width: 90vw;
+    height: 220px;
+    max-height: 40vh;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+
+.rowamenidades {
+    margin-top: -2px;
+    position: relative;
+  }
+  
+.menuAptosPreviewMatriz2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 130px;
+    font-size: 100%;
+    background: rgba(220, 218, 217, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    width: 100%; /* Ocupa el 100% de su contenedor */
+    aspect-ratio: 1; /* Mantiene una relación de aspecto 1:1 para hacer que el ancho y el alto sean iguales */ 
+    text-align: center;
+    border: 3px solid white;
+    border-style: dashed;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+.menuAptosPreviewMatriz2 div:nth-child(1){
+    border: 2px solid #7D0000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(2){
+    border: 2px solid #7D0000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(3){
+    border: 2px solid #134D2D;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(4){
+    border: 2px solid #368A90;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(5){
+    border: 2px solid #000;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div:nth-child(6){
+    border: 2px solid #6C4788;
+    border-style: dashed;
+    font-weight: lighter;
+}
+.menuAptosPreviewMatriz2 div h3{
+    padding-bottom: 6px;
+    color: black;
+    font-weight: lighter;
+    font-size: medium;
+    border-bottom: 2px solid black;
+}
+.menuApartamentosH2{
+    padding: 2% 0;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2rem;
+    color: white;
+    font-size: xx-large;
+}
+
+.menuAptosPreviewMatriz2 div:hover div:not(:hover){
+    background-color: rgb(220, 218, 217,.10);
+    color: white;
+}
+.menuAptosPreviewMatriz2 div:hover{
+    background-color: rgb(220, 218, 217,.8);
+    color: white;
+}
+.menuAptosPreviewMatriz2 div:nth-child(odd) {
+    align-self: end;
+}
+.menuAptosPreviewMatriz2 div:nth-child(even) {
+    align-self: start;
+}
+.menuAptosPreviewMatriz2Info{
+    position: relative;
+    height: 40vh;
+}
+.menuAptosPreviewMatriz2Info div{
+    width: 20vw;
+    position: absolute;
+    background-color: rgb(50, 218, 61);
+}
+/* Primero de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(1){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 18vw;
+    top: 16vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) h3{
+    font-size: medium;
+    padding: 0 0 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: dashed 2px solid;
+    border-right: dashed 2px solid;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    height: 10vh;
+    width: 5vw;
+    left: 12vw;
+    top: 1vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(1) div span{
+    position: absolute;
+    right: -6.5px;
+    bottom: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Segundo de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(2){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 45vw;
+    top: 15vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) h3{
+    font-size: medium;
+    padding: 0 0 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 10vw;
+    left: 5.7vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(2) div span{
+    position: absolute;
+    right: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Tercer de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(3){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    left: 50vw;
+    bottom: 0vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) section{
+    margin-left: 3vw;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) h3{
+    font-size: medium;
+    padding: 0 0 3px 0;
+    text-align: end;
+    margin-right: 6vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) p{
+    padding: 6px 0 6px 5vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 6vw;
+    left: 0vw;
+    top: 1.2vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(3) div span{
+    position: absolute;
+    left: -6.5px;
+    bottom: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Cuarto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(4){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 0vw;
+    top: 4vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) p{
+    padding: 6px 0 6px 3.1vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 7vw;
+    left: -2vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(4) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Quinto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(5){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 0vw;
+    top: 24vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) p{
+    padding: 6px 0 6px 2vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 5vw;
+    left: 0vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(5) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Sexto de los 6 elementos */
+.menuAptosPreviewMatriz2Info div:nth-child(6){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 6vw;
+    top: 36vh;
+    display: flex;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) section{
+    margin-left: 3vw;
+    margin-top: -3vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) h3{
+    font-size: medium;
+    padding: 0 1vw 3px 3vw;
+    margin-right: 4vw;
+    border-bottom: 2px solid white;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) p{
+    padding: 6px 0 6px 2vw;
+    font-weight: lighter;
+    color: #9B9B9B;
+    font-size: small;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) div{
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border-style: dashed;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 8vh;
+    width: 5vw;
+    left: 0vw;
+    top: -10vh;
+}
+.menuAptosPreviewMatriz2Info div:nth-child(6) div span{
+    position: absolute;
+    left: -6.5px;
+    top: -7px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* CSS OneBedMatriz */
+.oneBedMatriz{
+    position: relative;
+}
+.atrasModels{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.atrasModels a{
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.oneBedMatrizSection0{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    transition: all ease .35s;
+    justify-content: center;
+}
+.oneBedMatrizHeader{
+    padding-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+    transition: all ease .35s;
+}
+.oneBedMatrizHeader div{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+}
+.oneBedMatrizHeader div section{
+    text-align: center;
+    border: 0px;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+.oneBedMatrizHeader div section img{
+    width: 120%;
+    margin: auto;
+}
+.oneBedMatrizHeader table{
+    width: 40%;
+    margin-right: 5%;
+    font-size: 1.2rem;
+    padding: 0.5% 1%;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.oneBedMatrizHeader table tr td{
+    padding: 0 0%;
+}
+.oneBedMatrizHeader table tr td:nth-child(2){
+    text-align: right;
+}
+.imgRender img{
+    width: 90%;
+    padding: 2vh 5%;
+    height: 28vh;
+}
+.oneBedMatrizSection{
+    transition: all ease .35s;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+.infoOneBedMatriz3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin: 0 3%;
+    font-size: 1.2rem;
+    padding-bottom: 2vh;
+}
+.infoOneBedMatriz3 h3{
+    letter-spacing: 1.2rem;
+}
+.infoOneBedMatriz3 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoOneBedMatriz3 div a{
+    padding: 1vh 3vw;
+    background-color: #134D2D;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 4vw;
+}
+.infoOneBedMatriz3 input[type='checkbox']{
+    display: none;
+}
+.checkbox1 {
+    display: inline-block;
+    width: 25px; 
+    height: 25px; 
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+.hidden-checkbox:checked + .checkbox1::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: black;
+}
+@media (max-width: 736px) {
+    .oneBedMatrizHeader{
+        display: block;
+    }
+    .oneBedMatrizHeader div{
+        width: 80%;
+        margin: 4vh auto 4vh auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .imgRender img{
+        width: 100%;
+        padding: 4vh 0;
+    }
+    .oneBedMatrizHeader div section img{
+        width: 70%;
+    }
+    .oneBedMatrizHeader table{
+        width: 80%;
+        margin: 4% auto;
+        padding: 2% 5%;
+    }
+    .oneBedMatrizHeader table{
+        margin: 0 auto;
+    }
+    .infoOneBedMatriz3{
+        padding-bottom: 5vh;
+    }
+    .oneBedMatrizSection0{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    }
+}
+
+/* CSS de OneBedMatrizInfo */
+.oneBedMatrizSection1{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    transition: all ease .35s;
+    justify-content: center;
+}
+.InfoOneBedMatrizSection{
+    height: 50vh;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+.InfoOneBedMatrizSection img{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+.InfoOneBedMatrizSection h3{
+    text-decoration: underline;
+}
+.InfoOneBedMatrizSection1 img{
+    width: 50%;
+}
+.InfoOneBedMatrizSection1 h3, .InfoOneBedMatrizSection1 select{
+    font-size: 1.5rem;
+}
+.InfoOneBedMatrizSection1 select{
+    border: 1px solid gray;
+    padding: .5% 10% .5% 3%;
+    border-radius: 5px;
+}
+.InfoOneBedMatrizSection1:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 2vh 10% 0 5%;
+}
+.InfoOneBedMatrizSection1 div:nth-child(2){
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 2vh 0 0 5%;
+}
+.InfoOneBedMatrizSection11{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    font-size: 1.2rem;
+    padding: 5% 0;
+}
+.InfoOneBedMatrizSection11 div{
+    margin: 0 auto;
+}
+.InfoOneBedMatrizSection11 li{
+    list-style: none;
+}
+.InfoOneBedMatrizSection11 h3{
+    margin-bottom: 1vh;
+}
+.InfoOneBedMatrizSection11 table{
+    width: 100%;
+}
+.InfoOneBedMatrizSection11 table tr:last-child td{
+    padding-top: 20px;
+}
+.InfoOneBedMatrizSection11 table tr td:nth-child(2){
+    text-align: right;
+}
+.InfoOneBedMatrizSection2{
+    height: 70%;
+    width: 90%;
+    padding: 4% 5%;
+}
+.InfoOneBedMatrizSection22{
+    text-decoration: none !important;
+    letter-spacing: 1.2rem;
+    padding: 0 5%;
+}
+.carousel {
+    width: 86%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 5vh auto 0 auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    text-align: center;
+  }
+  .carousel-item img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 300px; /* Establece un alto fijo */
+    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+    user-select: none;
+    pointer-events: none;
+  }
+    
+/* Flechas de navegación mejoradas */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .carousel-control.left {
+    left: 15px;
+  }
+  
+  .carousel-control.right {
+    right: 15px;
+  }
+  
+  /* Efecto hover en las flechas */
+  .carousel-control:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  
+  /* Estilos para las bolitas */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carousel-indicators .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators .indicator.active {
+    background-color: #333;
+  }
+  
+  @media (max-width: 736px) {
+    .oneBedMatrizSection1{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .InfoOneBedMatrizSection1 div img{
+        width: 100%;
+    }
+    .InfoOneBedMatrizSection{
+        min-height: 50vh;
+        height: auto;
+    }
+    .InfoOneBedMatrizSection div{
+        margin: 5% auto;
+        width: 80%;
+    }
+}

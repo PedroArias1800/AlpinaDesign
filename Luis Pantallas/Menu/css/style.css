@@ -1,0 +1,357 @@
+.MENU-ABOUT-ALPINA {
+    background-color: rgba(255, 255, 255, 1.0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .MENU-ABOUT-ALPINA .div {
+    background-color: rgba(255, 255, 255, 1.0);
+    overflow: hidden;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    background-image: url(../img/img25.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .MENU-ABOUT-ALPINA .overlap {
+    position: absolute;
+    width: 1820px;
+    height: 1024px;
+    top: 0;
+    left: -156px;
+  }
+  
+  .MENU-ABOUT-ALPINA .start-page {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0;
+    left: 156px;
+    background-color: #1e1e1e;
+  }
+  
+  .MENU-ABOUT-ALPINA .overlap-group {
+    position: relative;
+    height: 1024px;
+    background-image: url(../img/img25.png);
+    background-size: 100% 100%;
+  }
+  
+  .MENU-ABOUT-ALPINA .container {
+    position: absolute;
+    width: 325px;
+    height: 34px;
+    top: 47px;
+    left: 114px;
+  }
+  
+  .MENU-ABOUT-ALPINA .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    align-items: flex-start;
+    position: absolute;
+    top: 6px;
+    left: 64px;
+  }
+  
+  .MENU-ABOUT-ALPINA .button-menu-language-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .MENU-ABOUT-ALPINA .button-menu-language {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--www-zytro-co-uk-item-spacing-xs);
+    padding: 0px 0px 1px;
+    position: relative;
+    flex: 0 0 auto;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--system-colors-miscellaneous-floating-tab-text-unselected);
+  }
+  
+  .MENU-ABOUT-ALPINA .en-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    align-items: center;
+    padding: 0px 1.27px;
+    position: relative;
+  }
+  
+  .MENU-ABOUT-ALPINA .en {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    margin-left: -0.27px;
+    margin-right: -0.27px;
+    font-family: var(--www-zytro-co-uk-semantic-button-font-family);
+    font-weight: var(--www-zytro-co-uk-semantic-button-font-weight);
+    color: var(--system-colors-miscellaneous-floating-tab-text-unselected);
+    font-size: var(--www-zytro-co-uk-semantic-button-font-size);
+    text-align: center;
+    letter-spacing: var(--www-zytro-co-uk-semantic-button-letter-spacing);
+    line-height: var(--www-zytro-co-uk-semantic-button-line-height);
+    white-space: nowrap;
+    font-style: var(--www-zytro-co-uk-semantic-button-font-style);
+  }
+  
+  .MENU-ABOUT-ALPINA .mask-group {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .MENU-ABOUT-ALPINA .component {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6px;
+    left: 128px;
+    border-radius: 9999px;
+  }
+  
+  .MENU-ABOUT-ALPINA .text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--www-zytro-co-uk-red-hat-display-regular-16-font-family);
+    font-weight: var(--www-zytro-co-uk-red-hat-display-regular-16-font-weight);
+    color: var(--system-colors-miscellaneous-floating-tab-text-unselected);
+    font-size: var(--www-zytro-co-uk-red-hat-display-regular-16-font-size);
+    letter-spacing: var(
+      --www-zytro-co-uk-red-hat-display-regular-16-letter-spacing
+    );
+    line-height: var(--www-zytro-co-uk-red-hat-display-regular-16-line-height);
+    white-space: nowrap;
+    font-style: var(--www-zytro-co-uk-red-hat-display-regular-16-font-style);
+  }
+  
+  .MENU-ABOUT-ALPINA .group {
+    position: absolute;
+    width: 225px;
+    height: 46px;
+    top: 42px;
+    left: 1155px;
+  }
+  
+  .MENU-ABOUT-ALPINA .title-header {
+    display: flex;
+    width: 354px;
+    height: 48px;
+    align-items: center;
+    padding: 50px 16px;
+    position: absolute;
+    top: 394px;
+    left: 85px;
+    background-color: #83838352;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .MENU-ABOUT-ALPINA .title {
+    position: relative;
+    width: fit-content;
+    margin-top: -41.00px;
+    margin-bottom: -39.00px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #bebebe;
+    font-size: 16px;
+    letter-spacing: 4.00px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .MENU-ABOUT-ALPINA .icon-button {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    margin-top: -50.00px;
+    margin-bottom: -50.00px;
+  }
+  
+  .MENU-ABOUT-ALPINA .state-layer-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
+  .MENU-ABOUT-ALPINA .state-layer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .MENU-ABOUT-ALPINA .icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .MENU-ABOUT-ALPINA .element-alpina {
+    position: absolute;
+    width: 1820px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0px 4px 4px #00000040;
+  }
+  
+  .MENU-ABOUT-ALPINA .group-2 {
+    position: absolute;
+    width: 355px;
+    height: 190px;
+    top: 347px;
+    left: 241px;
+  }
+  
+  .MENU-ABOUT-ALPINA .title-header-2 {
+    padding: 0px 16px;
+    top: 0;
+    background-color: #d1e4d899;
+    display: flex;
+    width: 354px;
+    height: 48px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .MENU-ABOUT-ALPINA .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--m3-schemes-background);
+    font-size: 16px;
+    letter-spacing: 2.00px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .MENU-ABOUT-ALPINA .div-wrapper {
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .MENU-ABOUT-ALPINA .overlap-2 {
+    position: absolute;
+    width: 354px;
+    height: 95px;
+    top: 95px;
+    left: 1px;
+  }
+  
+  .MENU-ABOUT-ALPINA .title-header-3 {
+    padding: 50px 16px;
+    top: 0;
+    background-color: #83838352;
+    display: flex;
+    width: 354px;
+    height: 48px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .MENU-ABOUT-ALPINA .title-header-4 {
+    padding: 0px 16px;
+    top: 47px;
+    background-color: #bdbdbd30;
+    display: flex;
+    width: 354px;
+    height: 48px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .MENU-ABOUT-ALPINA .title-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #bebebe;
+    font-size: 16px;
+    letter-spacing: 4.00px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+  
+  .MENU-ABOUT-ALPINA .icon-button-2 {
+    display: flex;
+    width: 48px;
+    flex-direction: column;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .MENU-ABOUT-ALPINA .img {
+    position: absolute;
+    width: 1482px;
+    height: 834px;
+    top: -2738px;
+    left: 2265px;
+    object-fit: cover;
+  }
+
+  .MENU-ABOUT-ALPINA .about-alpina-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+}
+
+.MENU-ABOUT-ALPINA .about-alpina-button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Efecto de sombra al pasar el mouse */
+}
