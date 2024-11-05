@@ -236,7 +236,6 @@ input[type='submit']{
     font-size: 1.2rem;
 
 }
-
 .header3 img{
     width: 12rem;
 }
@@ -250,14 +249,14 @@ input[type='submit']{
     color: white;
 }
 .header3 select{
-    color: white;
+    color: black;
     border-bottom: 2px solid white;
 }
 .header3 select option{
     color: black;
     padding: 0 20%;
     background-color: transparent !important;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 .header3 a{
     position: absolute;
@@ -269,7 +268,7 @@ input[type='submit']{
     border-bottom: 2px solid transparent;
 }
 .header3 a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 .menuApartamentosMatrices1{
     position: absolute;
