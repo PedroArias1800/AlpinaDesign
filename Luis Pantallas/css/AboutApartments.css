@@ -743,7 +743,18 @@ input[type='submit']{
     border-radius: 50%;
 }
 
+/*septimo elemento */
 
+.menuAptosPreviewMatriz2Info div:nth-child(7){
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    right: 0vw;
+    top: -10vh;
+    display: flex;
+  }
+  
 /* CSS OneBedMatriz */
 .oneBedMatriz{
     position: relative;

@@ -283,8 +283,7 @@ input[type="submit"] {
     font-size: x-large;
     font-size: 1.2rem;
 }
-
-.header3 img {
+.header3 img{
     width: 12rem;
 }
 
@@ -307,7 +306,7 @@ input[type="submit"] {
     color: black;
     padding: 0 20%;
     background-color: transparent !important;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 
 .header3 a {
