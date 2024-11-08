@@ -1,38 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100% !important;
 }
-.inicioLogin{
-    height: 100% !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.9) 100%), /* Degradado transparente a oscuro */
-        url('../img/back01.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.textUpper {
+    text-transform: uppercase;
 }
-.inicio{
+
+.inicioLogin {
     height: 100% !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%), /* Degradado transparente a oscuro */
-        url('../img/back02.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.inicio2{
-    height: 100% !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%), /* Degradado transparente a oscuro */
-        url('../img/back01.jpeg');
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 0.9) 100%),
+        /* Degradado transparente a oscuro */
+        url("../img/back01.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.headerAbout{
+.inicio {
+    height: 100% !important;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.7) 100%),
+        /* Degradado transparente a oscuro */
+        url("../img/back02.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.inicio2 {
+    height: 100% !important;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.9) 100%),
+        /* Degradado transparente a oscuro */
+        url("../img/back01.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerAbout {
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -42,19 +58,19 @@ body{
     font-size: x-large;
 }
 
-.headerAbout img{
+.headerAbout img {
     width: 15rem;
     margin-right: 5%;
 }
-.headerAbout div{
+
+.headerAbout div {
     margin-left: 10%;
     display: flex;
     align-items: end;
     gap: 10px;
-
 }
 
-.header2{
+.header2 {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -64,30 +80,34 @@ body{
     font-size: x-large;
 }
 
-.header2 img{
+.header2 img {
     width: 12rem;
 }
-.header2 div{
+
+.header2 div {
     position: absolute;
     left: 10%;
     display: flex;
     align-items: end;
     gap: 20px;
 }
+
 @media (max-width: 736px) {
-    .header2{
+    .header2 {
         width: 80%;
         justify-content: space-between;
         padding: 0 10%;
     }
-    .header2 div{
+
+    .header2 div {
         position: static;
         left: 0;
         display: flex;
         align-items: end;
         gap: 20px;
     }
-    .menuApartamentosMatrices1{
+
+    .menuApartamentosMatrices1 {
         position: relative !important;
         margin-top: 10%;
     }
@@ -101,121 +121,149 @@ select {
     border-bottom: 2px solid black;
 }
 
-.AboutSections{
+.AboutSections {
     width: 25rem;
     height: 60vh;
     margin-left: 5%;
     margin-top: 25vh;
 }
-.AboutSections a{
+
+.AboutSections a {
     text-decoration: none;
 }
-.AboutSections a p{
+
+.AboutSections a p {
     transition: all 0.3s ease;
     width: 90%;
     text-decoration: none;
     padding: 3% 0 3% 5%;
-    background-color: #D1E4D96B;
+    background-color: #d1e4d96b;
     color: white;
     font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     border: 1px solid black;
     text-align: left;
 }
-.AboutSections a p span{
+
+.AboutSections a p span {
     color: black;
     font-weight: bold;
     font-size: 1.1rem;
     margin-left: 1vw;
 }
 
-.AboutSections:hover a p:not(:hover){
-    background-color: rgb(209, 228, 217, .32);
-    color: white;
-}
-.AboutSections a p:hover{
-    background-color: rgb(209, 228, 217, .6);
+.AboutSections:hover a p:not(:hover) {
+    background-color: rgb(209, 228, 217, 0.32);
     color: white;
 }
 
+.AboutSections a p:hover {
+    background-color: rgb(209, 228, 217, 0.6);
+    color: white;
+}
 
 /* CSS LOGIN */
-.sectionFormLogin, .sectionFormSignUp{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.sectionFormLogin,
+.sectionFormSignUp {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     background-color: white;
     width: 30%;
-    margin: 8vh auto;
     padding: 4rem 0;
     border-radius: 50px;
     text-align: center;
-}
-.sectionFormSignUp{
-    margin: 4rem auto;
-    padding: 2rem 0;
+    margin: 5vh auto;
+    height: 60vh;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
-.sectionFormLogin h3, .sectionFormSignUp h3{
+.sectionFormLogin h3,
+.sectionFormSignUp h3 {
     width: 60%;
     padding: 2% 1%;
     margin: auto;
-    background-color: #13421A;
+    background-color: #13421a;
     color: white;
     border-radius: 25px;
 }
-.sectionFormLogin h2, .sectionFormSignUp h2{
-    margin: 7% 0;
+
+.sectionFormLogin h2,
+.sectionFormSignUp h2 {
+    margin: 5vh 0;
 }
-.formLogin p{
+
+.formLogin p {
     text-align: left;
     font-size: 1.2rem;
 }
-.sectionFormSignUp h1{
+
+.sectionFormSignUp h1 {
     font-size: x-large;
 }
-.formLogin, .formSignUp {
+
+.formLogin,
+.formSignUp {
     width: 80%;
     margin: auto;
+    height: auto;
 }
-input[type="email"], input[type="password"],input[type='text']{
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
     border: none;
-    border-bottom: 2px solid #D3D3D3;
+    border-bottom: 2px solid #d3d3d3;
     font-size: large;
     width: 100%;
-    margin: 5% 0;
-    padding-bottom: 2%;
+    margin: 2vh 0;
 }
+
 /* .formSignUp input[type='text']{
     margin: 3% 0;
 } */
-.formLogin input::placeholder, .formSignUp input::placeholder{
-    color: #B4ADAD;
+.formLogin input::placeholder,
+.formSignUp input::placeholder {
+    color: #b4adad;
 }
-input[type='submit']{
+
+input[type="submit"] {
     width: 94%;
-    background-color: #2C2C2C;
+    background-color: #2c2c2c;
     color: white;
     text-align: center;
     padding: 3% 0;
     font-size: large;
     border-radius: 10px;
-    margin: 8% 0 4% 0;
+    margin: 4vh 0 2vh 0;
+    cursor: pointer;
 }
-.formLogin a, .formSignUp a{
+
+.formLogin a,
+.formSignUp a {
     color: black;
     font-size: medium;
 }
+
 @media (max-width: 636px) {
-    .sectionFormLogin, .sectionFormSignUp{
+
+    .sectionFormLogin,
+    .sectionFormSignUp {
         width: 80%;
     }
 }
+
 @media (max-width: 1200px) {
-    .sectionFormLogin, .sectionFormSignUp{
+
+    .sectionFormLogin,
+    .sectionFormSignUp {
         width: 60%;
+        max-width: 550px;
+        min-width: 250px;
     }
 }
+
 /* CSS REGISTRO */
-.formContent{
+.formContent {
     width: 100%;
     gap: 5%;
     display: flex;
@@ -224,7 +272,7 @@ input[type='submit']{
 }
 
 /* CSS MENU APARTAMENTOS MATRIZ */
-.header3{
+.header3 {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -234,13 +282,13 @@ input[type='submit']{
     font-weight: lighter;
     font-size: x-large;
     font-size: 1.2rem;
-
 }
 
-.header3 img{
+.header3 img {
     width: 12rem;
 }
-.header3 div{
+
+.header3 div {
     position: absolute;
     left: 3%;
     display: flex;
@@ -249,29 +297,34 @@ input[type='submit']{
     margin-bottom: 1rem;
     color: white;
 }
-.header3 select{
+
+.header3 select {
     color: white;
     border-bottom: 2px solid white;
 }
-.header3 select option{
+
+.header3 select option {
     color: black;
     padding: 0 20%;
     background-color: transparent !important;
     border-bottom: 2px solid white;
 }
-.header3 a{
+
+.header3 a {
     position: absolute;
     right: 3%;
     text-decoration: none;
     color: white;
     margin-bottom: 1rem;
-    transition: all ease .30s;
+    transition: all ease 0.3s;
     border-bottom: 2px solid transparent;
 }
-.header3 a:hover{
+
+.header3 a:hover {
     border-bottom: 2px solid white;
 }
-.menuApartamentosMatrices1{
+
+.menuApartamentosMatrices1 {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -282,16 +335,19 @@ input[type='submit']{
     padding: 0 5%;
     justify-content: center;
 }
-.menuApartamentosMatrices{
+
+.menuApartamentosMatrices {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Mínimo 200px, máximo 1fr */
+    grid-template-columns: repeat(7, 1fr);
+    /* Mínimo 200px, máximo 1fr */
     gap: 10px;
     width: 90vw;
 }
-.menuApartamentosMatrices a{
+
+.menuApartamentosMatrices a {
     text-decoration: none;
-    background-color: rgb(220, 218, 217,.25);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-color: rgb(220, 218, 217, 0.25);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     padding: 20px;
     text-align: center;
     padding: 8rem 0 1.2rem 0;
@@ -300,11 +356,13 @@ input[type='submit']{
     font-size: large;
     transition: all 0.3s ease;
 }
-.menuApartamentosMatrices a h3{
+
+.menuApartamentosMatrices a h3 {
     color: white;
     font-weight: lighter;
 }
-.menuApartamentosH2{
+
+.menuApartamentosH2 {
     padding: 2% 0;
     text-align: center;
     margin: auto;
@@ -313,48 +371,57 @@ input[type='submit']{
     font-size: xx-large;
 }
 
-.menuApartamentosMatrices:hover a:not(:hover){
-    background-color: rgb(220, 218, 217,.20) !important;
+.menuApartamentosMatrices:hover a:not(:hover) {
+    background-color: rgb(220, 218, 217, 0.2) !important;
     color: white;
 }
-.menuApartamentosMatrices a:hover{
-    background-color: rgb(220, 218, 217,.4) !important;
+
+.menuApartamentosMatrices a:hover {
+    background-color: rgb(220, 218, 217, 0.4) !important;
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(1){
-    background-color: rgb(220, 218, 217,.20);
+
+.menuApartamentosMatrices a:nth-child(1) {
+    background-color: rgb(220, 218, 217, 0.2);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(2){
-    background-color: rgb(220, 218, 217,.28);
+
+.menuApartamentosMatrices a:nth-child(2) {
+    background-color: rgb(220, 218, 217, 0.28);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(3){
-    background-color: rgb(220, 218, 217,.35);
+
+.menuApartamentosMatrices a:nth-child(3) {
+    background-color: rgb(220, 218, 217, 0.35);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(4){
-    background-color: rgb(220, 218, 217,.4);
+
+.menuApartamentosMatrices a:nth-child(4) {
+    background-color: rgb(220, 218, 217, 0.4);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(5){
-    background-color: rgb(220, 218, 217,.35);
+
+.menuApartamentosMatrices a:nth-child(5) {
+    background-color: rgb(220, 218, 217, 0.35);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(6){
-    background-color: rgb(220, 218, 217,.28);
+
+.menuApartamentosMatrices a:nth-child(6) {
+    background-color: rgb(220, 218, 217, 0.28);
     color: white;
 }
-.menuApartamentosMatrices a:nth-child(7){
-    background-color: rgb(220, 218, 217,.20);
+
+.menuApartamentosMatrices a:nth-child(7) {
+    background-color: rgb(220, 218, 217, 0.2);
     color: white;
 }
 
 /* CSS MENU APTOS PREVIEW MATRIZ */
-.menuAptosPreviewMatriz{
+.menuAptosPreviewMatriz {
     margin-top: 4vh;
 }
-.menuAptosPreviewMatriz2{
+
+.menuAptosPreviewMatriz2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 6px;
@@ -362,9 +429,11 @@ input[type='submit']{
     width: 90vw;
     height: 220px;
     max-height: 40vh;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
 }
-.menuAptosPreviewMatriz2 div{
+
+.menuAptosPreviewMatriz2 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,54 +443,65 @@ input[type='submit']{
     max-width: 130px;
     font-size: 100%;
     background: rgba(220, 218, 217, 0.5);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    border-radius: 50%; /* Hace que el contenedor sea circular */
-    width: 100%; /* Ocupa el 100% de su contenedor */
-    aspect-ratio: 1; /* Mantiene una relación de aspecto 1:1 para hacer que el ancho y el alto sean iguales */ 
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    border-radius: 50%;
+    /* Hace que el contenedor sea circular */
+    width: 100%;
+    /* Ocupa el 100% de su contenedor */
+    aspect-ratio: 1;
+    /* Mantiene una relación de aspecto 1:1 para hacer que el ancho y el alto sean iguales */
     text-align: center;
     border: 3px solid white;
     border-style: dashed;
     border-radius: 100%;
     transition: all 0.3s ease;
 }
-.menuAptosPreviewMatriz2 div:nth-child(1){
-    border: 2px solid #7D0000;
+
+.menuAptosPreviewMatriz2 div:nth-child(1) {
+    border: 2px solid #7d0000;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div:nth-child(2){
-    border: 2px solid #7D0000;
+
+.menuAptosPreviewMatriz2 div:nth-child(2) {
+    border: 2px solid #7d0000;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div:nth-child(3){
-    border: 2px solid #134D2D;
+
+.menuAptosPreviewMatriz2 div:nth-child(3) {
+    border: 2px solid #134d2d;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div:nth-child(4){
-    border: 2px solid #368A90;
+
+.menuAptosPreviewMatriz2 div:nth-child(4) {
+    border: 2px solid #368a90;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div:nth-child(5){
+
+.menuAptosPreviewMatriz2 div:nth-child(5) {
     border: 2px solid #000;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div:nth-child(6){
-    border: 2px solid #6C4788;
+
+.menuAptosPreviewMatriz2 div:nth-child(6) {
+    border: 2px solid #6c4788;
     border-style: dashed;
     font-weight: lighter;
 }
-.menuAptosPreviewMatriz2 div h3{
+
+.menuAptosPreviewMatriz2 div h3 {
     padding-bottom: 6px;
     color: black;
     font-weight: lighter;
     font-size: medium;
     border-bottom: 2px solid black;
 }
-.menuApartamentosH2{
+
+.menuApartamentosH2 {
     padding: 2% 0;
     text-align: center;
     margin: auto;
@@ -430,31 +510,37 @@ input[type='submit']{
     font-size: xx-large;
 }
 
-.menuAptosPreviewMatriz2 div:hover div:not(:hover){
-    background-color: rgb(220, 218, 217,.10);
+.menuAptosPreviewMatriz2 div:hover div:not(:hover) {
+    background-color: rgb(220, 218, 217, 0.1);
     color: white;
 }
-.menuAptosPreviewMatriz2 div:hover{
-    background-color: rgb(220, 218, 217,.8);
+
+.menuAptosPreviewMatriz2 div:hover {
+    background-color: rgb(220, 218, 217, 0.8);
     color: white;
 }
+
 .menuAptosPreviewMatriz2 div:nth-child(odd) {
     align-self: end;
 }
+
 .menuAptosPreviewMatriz2 div:nth-child(even) {
     align-self: start;
 }
-.menuAptosPreviewMatriz2Info{
+
+.menuAptosPreviewMatriz2Info {
     position: relative;
     height: 40vh;
 }
-.menuAptosPreviewMatriz2Info div{
+
+.menuAptosPreviewMatriz2Info div {
     width: 20vw;
     position: absolute;
     background-color: rgb(50, 218, 61);
 }
+
 /* Primero de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(1){
+.menuAptosPreviewMatriz2Info div:nth-child(1) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -463,19 +549,22 @@ input[type='submit']{
     top: 16vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(1) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(1) h3 {
     font-size: medium;
     padding: 0 0 3px 3vw;
     margin-right: 4vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(1) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(1) p {
     padding: 6px 0 6px 5vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(1) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(1) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -490,7 +579,8 @@ input[type='submit']{
     left: 12vw;
     top: 1vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(1) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(1) div span {
     position: absolute;
     right: -6.5px;
     bottom: -7px;
@@ -499,8 +589,9 @@ input[type='submit']{
     height: 10px;
     border-radius: 50%;
 }
+
 /* Segundo de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(2){
+.menuAptosPreviewMatriz2Info div:nth-child(2) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -509,19 +600,22 @@ input[type='submit']{
     top: 15vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(2) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(2) h3 {
     font-size: medium;
     padding: 0 0 3px 3vw;
     margin-right: 4vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(2) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(2) p {
     padding: 6px 0 6px 5vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(2) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(2) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -534,7 +628,8 @@ input[type='submit']{
     left: 5.7vw;
     top: -10vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(2) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(2) div span {
     position: absolute;
     right: -6.5px;
     top: -7px;
@@ -543,8 +638,9 @@ input[type='submit']{
     height: 10px;
     border-radius: 50%;
 }
+
 /* Tercer de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(3){
+.menuAptosPreviewMatriz2Info div:nth-child(3) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -553,23 +649,27 @@ input[type='submit']{
     bottom: 0vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(3) section{
+
+.menuAptosPreviewMatriz2Info div:nth-child(3) section {
     margin-left: 3vw;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(3) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(3) h3 {
     font-size: medium;
     padding: 0 0 3px 0;
     text-align: end;
     margin-right: 6vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(3) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(3) p {
     padding: 6px 0 6px 5vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(3) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(3) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -582,7 +682,8 @@ input[type='submit']{
     left: 0vw;
     top: 1.2vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(3) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(3) div span {
     position: absolute;
     left: -6.5px;
     bottom: -7px;
@@ -591,8 +692,9 @@ input[type='submit']{
     height: 10px;
     border-radius: 50%;
 }
+
 /* Cuarto de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(4){
+.menuAptosPreviewMatriz2Info div:nth-child(4) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -601,23 +703,27 @@ input[type='submit']{
     top: 4vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(4) section{
+
+.menuAptosPreviewMatriz2Info div:nth-child(4) section {
     margin-left: 3vw;
     margin-top: -3vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(4) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(4) h3 {
     font-size: medium;
     padding: 0 1vw 3px 3vw;
     margin-right: 4vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(4) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(4) p {
     padding: 6px 0 6px 3.1vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(4) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(4) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -630,7 +736,8 @@ input[type='submit']{
     left: -2vw;
     top: -10vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(4) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(4) div span {
     position: absolute;
     left: -6.5px;
     top: -7px;
@@ -639,8 +746,9 @@ input[type='submit']{
     height: 10px;
     border-radius: 50%;
 }
+
 /* Quinto de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(5){
+.menuAptosPreviewMatriz2Info div:nth-child(5) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -649,23 +757,27 @@ input[type='submit']{
     top: 24vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(5) section{
+
+.menuAptosPreviewMatriz2Info div:nth-child(5) section {
     margin-left: 3vw;
     margin-top: -3vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(5) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(5) h3 {
     font-size: medium;
     padding: 0 1vw 3px 3vw;
     margin-right: 4vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(5) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(5) p {
     padding: 6px 0 6px 2vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(5) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(5) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -678,7 +790,8 @@ input[type='submit']{
     left: 0vw;
     top: -10vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(5) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(5) div span {
     position: absolute;
     left: -6.5px;
     top: -7px;
@@ -687,8 +800,9 @@ input[type='submit']{
     height: 10px;
     border-radius: 50%;
 }
+
 /* Sexto de los 6 elementos */
-.menuAptosPreviewMatriz2Info div:nth-child(6){
+.menuAptosPreviewMatriz2Info div:nth-child(6) {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -697,23 +811,27 @@ input[type='submit']{
     top: 36vh;
     display: flex;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(6) section{
+
+.menuAptosPreviewMatriz2Info div:nth-child(6) section {
     margin-left: 3vw;
     margin-top: -3vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(6) h3{
+
+.menuAptosPreviewMatriz2Info div:nth-child(6) h3 {
     font-size: medium;
     padding: 0 1vw 3px 3vw;
     margin-right: 4vw;
     border-bottom: 2px solid white;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(6) p{
+
+.menuAptosPreviewMatriz2Info div:nth-child(6) p {
     padding: 6px 0 6px 2vw;
     font-weight: lighter;
-    color: #9B9B9B;
+    color: #9b9b9b;
     font-size: small;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(6) div{
+
+.menuAptosPreviewMatriz2Info div:nth-child(6) div {
     position: absolute;
     z-index: 1;
     background-color: transparent;
@@ -726,7 +844,8 @@ input[type='submit']{
     left: 0vw;
     top: -10vh;
 }
-.menuAptosPreviewMatriz2Info div:nth-child(6) div span{
+
+.menuAptosPreviewMatriz2Info div:nth-child(6) div span {
     position: absolute;
     left: -6.5px;
     top: -7px;
@@ -736,53 +855,60 @@ input[type='submit']{
     border-radius: 50%;
 }
 
-
 /* CSS OneBedMatriz */
-.oneBedMatriz{
+.oneBedMatriz {
     position: relative;
 }
-.atrasModels{
+
+.atrasModels {
     position: absolute;
     top: 10px;
     left: 20px;
 }
-.atrasModels a{
+
+.atrasModels a {
     background-color: transparent;
     font-size: 2rem;
     cursor: pointer;
     color: black;
     text-decoration: none;
 }
-.oneBedMatrizSection0{
+
+.oneBedMatrizSection0 {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    transition: all ease .35s;
+    transition: all ease 0.35s;
     justify-content: center;
 }
-.oneBedMatrizHeader{
+
+.oneBedMatrizHeader {
     padding-top: 3vh;
     display: flex;
     justify-content: space-between;
-    transition: all ease .35s;
+    transition: all ease 0.35s;
 }
-.oneBedMatrizHeader div{
+
+.oneBedMatrizHeader div {
     margin-left: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15%;
 }
-.oneBedMatrizHeader div section{
+
+.oneBedMatrizHeader div section {
     text-align: center;
     border: 0px;
     padding: 1%;
     font-size: 1.2rem;
 }
-.oneBedMatrizHeader div section img{
+
+.oneBedMatrizHeader div section img {
     width: 120%;
     margin: auto;
 }
-.oneBedMatrizHeader table{
+
+.oneBedMatrizHeader table {
     width: 40%;
     margin-right: 5%;
     font-size: 1.2rem;
@@ -790,24 +916,29 @@ input[type='submit']{
     border-radius: 15px;
     border: 2px solid black;
 }
-.oneBedMatrizHeader table tr td{
+
+.oneBedMatrizHeader table tr td {
     padding: 0 0%;
 }
-.oneBedMatrizHeader table tr td:nth-child(2){
+
+.oneBedMatrizHeader table tr td:nth-child(2) {
     text-align: right;
 }
-.imgRender img{
+
+.imgRender img {
     width: 90%;
     padding: 2vh 5%;
     height: 28vh;
-    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
-.oneBedMatrizSection{
-    transition: all ease .35s;
+
+.oneBedMatrizSection {
+    transition: all ease 0.35s;
     border: 1px solid gray;
     box-sizing: border-box;
 }
-.infoOneBedMatriz3{
+
+.infoOneBedMatriz3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -816,36 +947,42 @@ input[type='submit']{
     font-size: 1.2rem;
     padding-bottom: 2vh;
 }
-.infoOneBedMatriz3 h3{
+
+.infoOneBedMatriz3 h3 {
     letter-spacing: 1.2rem;
 }
-.infoOneBedMatriz3 div{
+
+.infoOneBedMatriz3 div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.infoOneBedMatriz3 div a{
+
+.infoOneBedMatriz3 div a {
     padding: 1vh 3vw;
-    background-color: #134D2D;
+    background-color: #134d2d;
     color: white;
     text-decoration: none;
     border-radius: 10px;
     margin-left: 4vw;
 }
-.infoOneBedMatriz3 input[type='checkbox']{
+
+.infoOneBedMatriz3 input[type="checkbox"] {
     display: none;
 }
+
 .checkbox1 {
     display: inline-block;
-    width: 25px; 
-    height: 25px; 
+    width: 25px;
+    height: 25px;
     border: 1px solid black;
     cursor: pointer;
     position: relative;
     border-radius: 5px;
 }
-.hidden-checkbox:checked + .checkbox1::after {
-    content: '✔';
+
+.hidden-checkbox:checked+.checkbox1::after {
+    content: "✔";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -853,117 +990,144 @@ input[type='submit']{
     font-size: 16px;
     color: black;
 }
+
 @media (max-width: 736px) {
-    .oneBedMatrizHeader{
+    .oneBedMatrizHeader {
         display: block;
     }
-    .oneBedMatrizHeader div{
+
+    .oneBedMatrizHeader div {
         width: 80%;
         margin: 4vh auto 4vh auto;
         display: grid;
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, 1fr);
     }
-    .imgRender img{
+
+    .imgRender img {
         width: 100%;
         padding: 4vh 0;
     }
-    .oneBedMatrizHeader div section img{
+
+    .oneBedMatrizHeader div section img {
         width: 70%;
     }
-    .oneBedMatrizHeader table{
+
+    .oneBedMatrizHeader table {
         width: 80%;
         margin: 4% auto;
         padding: 2% 5%;
     }
-    .oneBedMatrizHeader table{
+
+    .oneBedMatrizHeader table {
         margin: 0 auto;
     }
-    .infoOneBedMatriz3{
+
+    .infoOneBedMatriz3 {
         padding-bottom: 5vh;
     }
-    .oneBedMatrizSection0{
+
+    .oneBedMatrizSection0 {
         grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
     }
 }
 
 /* CSS de OneBedMatrizInfo */
-.oneBedMatrizSection1{
+.oneBedMatrizSection1 {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    transition: all ease .35s;
+    transition: all ease 0.35s;
     justify-content: center;
 }
-.InfoOneBedMatrizSection{
+
+.InfoOneBedMatrizSection {
     height: 50vh;
     box-sizing: border-box;
     border: 1px solid gray;
 }
-.InfoOneBedMatrizSection img{
+
+.InfoOneBedMatrizSection img {
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
-.InfoOneBedMatrizSection h3{
+
+.InfoOneBedMatrizSection h3 {
     text-decoration: underline;
 }
-.InfoOneBedMatrizSection1 img{
+
+.InfoOneBedMatrizSection1 img {
     width: 50%;
 }
-.InfoOneBedMatrizSection1 h3, .InfoOneBedMatrizSection1 select{
+
+.InfoOneBedMatrizSection1 h3,
+.InfoOneBedMatrizSection1 select {
     font-size: 1.5rem;
 }
-.InfoOneBedMatrizSection1 select{
+
+.InfoOneBedMatrizSection1 select {
     border: 1px solid gray;
-    padding: .5% 10% .5% 3%;
+    padding: 0.5% 10% 0.5% 3%;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3) !important;
 }
-.InfoOneBedMatrizSection1:nth-child(1){
+
+.InfoOneBedMatrizSection1:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 2vh 10% 0 5%;
 }
-.InfoOneBedMatrizSection1 div:nth-child(2){
+
+.InfoOneBedMatrizSection1 div:nth-child(2) {
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 20px;
     padding: 2vh 0 0 5%;
 }
-.InfoOneBedMatrizSection11{
+
+.InfoOneBedMatrizSection11 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
     font-size: 1.2rem;
     padding: 5% 0;
 }
-.InfoOneBedMatrizSection11 div{
+
+.InfoOneBedMatrizSection11 div {
     margin: 0 auto;
 }
-.InfoOneBedMatrizSection11 li{
+
+.InfoOneBedMatrizSection11 li {
     list-style: none;
 }
-.InfoOneBedMatrizSection11 h3{
+
+.InfoOneBedMatrizSection11 h3 {
     margin-bottom: 1vh;
 }
-.InfoOneBedMatrizSection11 table{
+
+.InfoOneBedMatrizSection11 table {
     width: 100%;
 }
-.InfoOneBedMatrizSection11 table tr:last-child td{
+
+.InfoOneBedMatrizSection11 table tr:last-child td {
     padding-top: 20px;
 }
-.InfoOneBedMatrizSection11 table tr td:nth-child(2){
+
+.InfoOneBedMatrizSection11 table tr td:nth-child(2) {
     text-align: right;
 }
-.InfoOneBedMatrizSection2{
+
+.InfoOneBedMatrizSection2 {
     height: 70%;
     width: 90%;
     padding: 4% 5%;
 }
-.InfoOneBedMatrizSection22{
+
+.InfoOneBedMatrizSection22 {
     text-decoration: none !important;
     letter-spacing: 1.2rem;
     padding: 0 5%;
 }
+
 .carousel {
     width: 86%;
     height: 40vh;
@@ -973,26 +1137,29 @@ input[type='submit']{
     border-radius: 10px;
     position: relative;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
 
-  }
-  
-  .carousel-track {
+.carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     min-width: 100%;
     text-align: center;
-  }
-  .carousel-item img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    height: 300px; /* Establece un alto fijo */
-    object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: 300px;
+    /* Establece un alto fijo */
+    object-fit: cover;
+    /* Mantiene la proporción y recorta la imagen si es necesario */
     user-select: none;
     pointer-events: none;
-  }
-    
+}
+
 /* Flechas de navegación mejoradas */
 .carousel-control {
     position: absolute;
@@ -1011,57 +1178,59 @@ input[type='submit']{
     justify-content: center;
     border-radius: 50%;
     transition: background 0.3s, transform 0.3s;
-  }
-  
-  .carousel-control.left {
+}
+
+.carousel-control.left {
     left: 15px;
-  }
-  
-  .carousel-control.right {
+}
+
+.carousel-control.right {
     right: 15px;
-  }
-  
-  /* Efecto hover en las flechas */
-  .carousel-control:hover {
+}
+
+/* Efecto hover en las flechas */
+.carousel-control:hover {
     background: rgba(0, 0, 0, 0.6);
     transform: translateY(-50%) scale(1.1);
-  }
+}
 
-  
-  /* Estilos para las bolitas */
-  .carousel-indicators {
+/* Estilos para las bolitas */
+.carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
-  }
-  
-  .carousel-indicators .indicator {
+}
+
+.carousel-indicators .indicator {
     width: 10px;
     height: 10px;
     background-color: #ccc;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  .carousel-indicators .indicator.active {
+}
+
+.carousel-indicators .indicator.active {
     background-color: #333;
-  }
-  
-  @media (max-width: 736px) {
-    .oneBedMatrizSection1{
+}
+
+@media (max-width: 736px) {
+    .oneBedMatrizSection1 {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
-    .InfoOneBedMatrizSection1 div img{
+
+    .InfoOneBedMatrizSection1 div img {
         width: 100%;
     }
-    .InfoOneBedMatrizSection{
+
+    .InfoOneBedMatrizSection {
         min-height: 50vh;
         height: auto;
     }
-    .InfoOneBedMatrizSection div{
+
+    .InfoOneBedMatrizSection div {
         margin: 5% auto;
         width: 80%;
     }
@@ -1069,11 +1238,12 @@ input[type='submit']{
 
 /* FLUJO DE LUIS */
 /* ESENCIA */
-.inicio3{
-    background-color: #C4C4C4;
+.inicio3 {
+    background-color: #c4c4c4;
     height: 100vh;
 }
-.inicio3 .headerAbout{
+
+.inicio3 .headerAbout {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1081,89 +1251,105 @@ input[type='submit']{
     width: 96%;
     margin: auto;
 }
-.inicio3 .headerAbout a{
+
+.inicio3 .headerAbout a {
     margin: 0;
     color: #000;
     text-decoration: none;
     font-size: 1.3rem;
 }
-.esenciaDiv{
+
+.esenciaDiv {
     position: relative;
     height: 25vh;
     box-sizing: border-box;
     margin-bottom: 5vh;
 }
+
 .esenciaTitle {
     color: rgba(11, 45, 22, 0.78);
     display: flex;
-    justify-content: space-between; /* Espacio entre las letras */
+    justify-content: space-between;
+    /* Espacio entre las letras */
     align-items: center;
     width: 80%;
     height: 100%;
     margin: auto;
     font-size: 6vw;
-  }
+}
+
 .esenciaTitle span {
     flex: 1;
     text-align: center;
 }
-.esenciaInfo{
+
+.esenciaInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto !important;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
 }
-.esenciaInfo div{
+
+.esenciaInfo div {
     width: 22% !important;
     margin: 0 auto;
 }
-.esenciaInfo div h3{
+
+.esenciaInfo div h3 {
     padding-left: 20%;
     text-align: right;
     border-bottom: 2px solid black;
     margin: 0 40% 2vh 0;
     font-size: 1.15rem;
 }
-.esenciaInfo div p{
+
+.esenciaInfo div p {
     padding: 0 0 2vh 10%;
     width: 90%;
     font-size: 1rem;
     color: #414141;
 }
-.esenciaImg{
+
+.esenciaImg {
     width: 100%;
     height: 45vh;
     display: flex;
     align-items: center;
     overflow-x: auto;
-    scrollbar-width: none
+    scrollbar-width: none;
 }
-.esenciaImg div{
+
+.esenciaImg div {
     width: 50%;
     height: 100% !important;
 }
-.esenciaImg img{
+
+.esenciaImg img {
     white-space: nowrap;
     height: 100% !important;
 }
+
 @media (max-width: 900px) {
-    .esenciaInfo{
+    .esenciaInfo {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
         padding-bottom: 5vh;
     }
-    .esenciaInfo div{
+
+    .esenciaInfo div {
         width: 90% !important;
         margin: auto;
     }
-    .esenciaTitle{
+
+    .esenciaTitle {
         font-size: 5rem;
     }
 }
+
 @media (max-width: 600px) {
-    .esenciaInfo div{
+    .esenciaInfo div {
         width: 80% !important;
         padding: 2% 0;
     }

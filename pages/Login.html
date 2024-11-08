@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/AboutApartments.css">
-</head>
-<body>
-    <div class="inicioLogin">
-        <header class="header2">
-            <div>
-                <select name="language" id="language">
-                    <option>EN</option>
-                    <option>ES</option>
-                </select>
-                <p>LOG IN</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/AboutApartments.css">
+    </head>
+    <body>
+        <div class="inicioLogin">
+            <header class="header2">
+                <div>
+                    <select name="language" id="language">
+                        <option>EN</option>
+                        <option>ES</option>
+                    </select>
+                    <p>LOG IN</p>
+                </div>
+                <img src="./img/logoAlpina2.png" alt="Logo Alpina">
+            </header>
+            <div class="sectionFormSignUp">
+                <h3>SIGN UP</h3>
+                <h2>Datos Generales</h2>
+                <form action="/menu" method="GET" class="formSignUp">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre*">
+                    <input type="email" name="email" id="email" placeholder="Email*">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido*">
+                    <input type="text" name="phone" id="phone" placeholder="Teléfono*">
+                    <input type="submit" value="Sign In">
+                    <a href="./counter">Navegar Couter</a>
+                </form>
             </div>
-            <img src="../img/logoAlpina2.png" alt="Logo Alpina">
-        </header>
-        <div class="sectionFormLogin">
-            <h3>LOG IN</h3>
-            <h2>WELCOME</h2>
-            <form action="./AboutApartments.html" method="GET" class="formLogin">
-                <input type="email" name="emain" id="email" placeholder="Email*">
-                <input type="password" name="pass" id="pass" placeholder="Password*">
-                <input type="submit" value="Sign In">
-                <a href="./ForgotPassword.html">Forgot password?</a>
-            </form>
         </div>
-    </div>
-</body>
+    </body>
 </html>
