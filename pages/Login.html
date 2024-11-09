@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../css/AboutApartments.css">
+        <script src="../js/anime.min.js"></script>
+        <script src="../js/animateElements.js"></script>
     </head>
     <body>
         <div class="inicioLogin">
@@ -21,15 +23,26 @@
             <div class="sectionFormSignUp">
                 <h3>SIGN UP</h3>
                 <h2>Datos Generales</h2>
-                <form action="/menu" method="GET" class="formSignUp">
+                <form action="./AboutApartments.html" method="GET" class="formSignUp" >
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre*">
                     <input type="email" name="email" id="email" placeholder="Email*">
                     <input type="text" name="apellido" id="apellido" placeholder="Apellido*">
                     <input type="text" name="phone" id="phone" placeholder="Teléfono*">
                     <input type="submit" value="Sign In">
-                    <a href="./counter">Navegar Couter</a>
+                    <a href="./Registro.html">Sign Up</a>
                 </form>
             </div>
         </div>
     </body>
+    <script>
+        var sectionFormSignUp = document.querySelectorAll('.sectionFormSignUp');
+
+        anime({
+            targets: sectionFormSignUp,
+            translateX: '5%',
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            duration: 600
+        });
+    </script>
 </html>

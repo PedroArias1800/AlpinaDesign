@@ -8,124 +8,82 @@
     <link rel="stylesheet" href="../css/AboutApartments.css" />
   </head>
   <body>
-    <div class="inicio3">
-      <header class="headerAbout">
-        <div>
-          <select name="language" id="language">
-            <option>EN</option>
-            <option>ES</option>
-          </select>
-          <a style="text-decoration: none;" href="./AboutApartments.html"><p>Menu</p></a>
-        </div>
-        <img src="../img/logoAlpina.png" alt="Logo Alpina" />
+    <div class="tours">
+      <video autoplay muted loop playsinline class="backgroundVideo">
+          <source src="../video/start.mp4" type="video/mp4">
+          Tu navegador no soporta el video HTML5.
+      </video>
+      <header class="header2 aboutBoqueteAlpina">
+          <div></div>
+          <img src="../img/logoAlpina2.png" alt="Logo Alpina">
       </header>
-
-      <div class="collapse-container">
-        <div class="collapseRow">
-          <button class="collapse-button" id="1" onclick="showDiv('div1', id)">
-            Volcan Baru
-          </button>
-          <button class="collapse-button" id="2" onclick="showDiv('div2', id)">
-            Gastronomia
-          </button>
-          <button class="collapse-button" id="3" onclick="showDiv('div3', id)">
-            Senderismo
-          </button>
-          <button class="collapse-button" id="4" onclick="showDiv('div4', id)">
-            Vida Nocturna
-          </button>
-          <button class="collapse-button" id="5" onclick="showDiv('div5', id)">
-            Otros
-          </button>
-        </div>
-        <div>
-          <div id="div1" class="show">
-            <h3>Volcan Baru</h3>
-            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
-            <p>
-              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
-              Barú se localiza en la Provincia de Chiriquí, al norte del país.
-              Nos encontramos con escenarios que van desde paisajes del bosque
-              lluvioso tropical con especies de gran altura hasta productos de
-              la última erupción del Volcán Barú hace millones de años.
-            </p>
+      <div class="toursInformation">
+        <div class="textContainer">
+          <div id="info1" class="text-item active">
+              <img src="../img/infoChiriqui/VolcanBaru1.jpg" alt="Imagen de Volcán Barú"  onclick="openPopup(this.src)">
+              <p>El Volcán Barú es uno de los principales símbolos de Chiriquí y una de las atracciones más destacadas de Panamá. Con 3,475 metros sobre el nivel del mar, es el punto más alto del país y el único lugar desde el cual, en días despejados, se pueden ver tanto el océano Atlántico como el Pacífico. Escalar el Volcán Barú es una experiencia única para los aventureros, ya sea a pie o en vehículos todo terreno. La caminata puede durar entre 5 y 8 horas, y el esfuerzo se ve recompensado con vistas espectaculares, además de la oportunidad de presenciar el amanecer desde la cima, una experiencia inolvidable.</p>
           </div>
-
-          <div id="div2" class="hide">
-            <h3>Gastronomia</h3>
-            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
-            <p>
-              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
-              Barú se localiza en la Provincia de Chiriquí, al norte del país.
-              Nos encontramos con escenarios que van desde paisajes del bosque
-              lluvioso tropical con especies de gran altura hasta productos de
-              la última erupción del Volcán Barú hace millones de años.
-            </p>
+          <div id="info2" class="text-item">
+              <img src="../img/infoChiriqui/Gastronomía1.jpg" alt="Imagen de Gastronomía"  onclick="openPopup(this.src)">
+              <p>La gastronomía en Chiriquí es rica y variada, influenciada tanto por ingredientes locales como por técnicas tradicionales. Entre sus platos típicos destacan el sancocho chiricano, los tamales, y el "queso blanco", fresco y artesanal. Chiriquí también es famosa por su café de altura, que se cultiva en áreas como Boquete y Volcán; sus granos de calidad superior han ganado reconocimiento a nivel mundial, especialmente el café Geisha, conocido por su sabor único y aroma floral. Además, en la región se pueden disfrutar pescados y mariscos frescos en la costa, así como frutas tropicales y productos frescos de las zonas agrícolas.</p>
           </div>
-
-          <div id="div3" class="hide">
-            <h3>Senderismo</h3>
-            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
-            <p>
-              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
-              Barú se localiza en la Provincia de Chiriquí, al norte del país.
-              Nos encontramos con escenarios que van desde paisajes del bosque
-              lluvioso tropical con especies de gran altura hasta productos de
-              la última erupción del Volcán Barú hace millones de años.
-            </p>
+          <div id="info3" class="text-item">
+              <img src="../img/infoChiriqui/Senderismo.jpg" alt="Imagen de Senderismo"  onclick="openPopup(this.src)">
+              <p>Chiriquí es un paraíso para los amantes del senderismo, con una amplia variedad de rutas para todos los niveles de experiencia. El sendero Los Quetzales es uno de los más populares, un recorrido de 9 kilómetros que conecta los pueblos de Boquete y Cerro Punta, rodeado de exuberante bosque nuboso y hogar de la famosa ave quetzal. Otros senderos incluyen el de La Cascada en el área de Volcán y la ruta al Cerro Punta. Cada uno ofrece paisajes increíbles, una biodiversidad única, y la posibilidad de estar en contacto directo con la naturaleza, desde ríos cristalinos hasta vistas panorámicas de las montañas chiricanas.</p>
           </div>
-
-          <div id="div4" class="hide">
-            <h3>Vida Nocturna</h3>
-            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
-            <p>
-              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
-              Barú se localiza en la Provincia de Chiriquí, al norte del país.
-              Nos encontramos con escenarios que van desde paisajes del bosque
-              lluvioso tropical con especies de gran altura hasta productos de
-              la última erupción del Volcán Barú hace millones de años.
-            </p>
+          <div id="info4" class="text-item">
+              <img src="../img/infoChiriqui/VidaNocturna1.jpg" alt="Imagen de Vida Nocturna"  onclick="openPopup(this.src)">
+              <p>La vida nocturna en Chiriquí tiene un ambiente relajado pero animado, especialmente en la ciudad de David y en Boquete. David cuenta con bares y discotecas que ofrecen desde música en vivo hasta noches de baile. Boquete, en cambio, tiene un estilo más bohemio, con bares y cafés acogedores donde se pueden disfrutar de buenas conversaciones y música en vivo. En ambos lugares, es común encontrar eventos culturales y festivales que reúnen tanto a lugareños como a visitantes, creando un ambiente alegre y acogedor para quienes buscan disfrutar de la noche en Chiriquí.</p>
           </div>
-
-          <div id="div5" class="hide">
-            <h3>Otros</h3>
-            <img src="../img/ToursVolcan.png" alt="Tour Volcan Baru" />
-            <p>
-              Con una extensión de 14,325 hectáreas, el Parque Nacional Volcán
-              Barú se localiza en la Provincia de Chiriquí, al norte del país.
-              Nos encontramos con escenarios que van desde paisajes del bosque
-              lluvioso tropical con especies de gran altura hasta productos de
-              la última erupción del Volcán Barú hace millones de años.
-            </p>
+          <div id="info5" class="text-item">
+              <img src="../img/infoChiriqui/Otros1.webp" alt="Imagen de Otras Actividades"  onclick="openPopup(this.src)">
+              <p>Chiriquí ofrece una variedad de experiencias adicionales que complementan su atractivo como destino turístico. La costa del Pacífico es ideal para los amantes de la playa, con lugares como Las Lajas y Boca Chica, donde se pueden practicar deportes acuáticos y relajarse en un ambiente tropical. La región también cuenta con aguas termales naturales, ideales para relajarse, y tours por fincas de café donde se aprende sobre el proceso de producción de esta famosa bebida. Chiriquí también tiene una cultura agrícola muy rica, y muchas fincas ofrecen experiencias de agroturismo, permitiendo a los visitantes conocer más sobre la vida rural y los productos locales.</p>
           </div>
+        </div>      
+          <div class="buttonGroup">
+            <button onclick="showText(1)" class="active">Volcán Barú</button>
+            <button onclick="showText(2)">Gastronomía</button>
+            <button onclick="showText(3)">Senderismo</button>
+            <button onclick="showText(4)">Vida Nocturna</button>
+            <button onclick="showText(5)">Otros</button>
+          </div>
+      </div>
+      <div>
+        <div class="aboutBoqueteSections">
+            <a href="./AboutApartments.html"><p>Menu</p></a>
         </div>
       </div>
     </div>
+    <div id="imagePopup" class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popupImage" src="" alt="Imagen ampliada">
+    </div>
     <script>
-      function showDiv(divId, buttonId) {
-        var divs = ["div1", "div2", "div3", "div4", "div5"];
-        var butts = ["1", "2", "3", "4", "5"];
+      function showText(number) {
+          const buttons = document.querySelectorAll('.buttonGroup button');
+          buttons.forEach(button => button.classList.remove('active'));
 
-        // Hide all divs
-        divs.forEach(function (id) {
-          document.getElementById(id).classList.remove("show");
-          document.getElementById(id).classList.add("hide");
-          console.log(id);
-        });
+          buttons[number - 1].classList.add('active');
 
-        //Hide button colors
-        butts.forEach(function (id) {
-          console.log(id);
-          document.getElementById(id).classList.add("normal");
-          document.getElementById(id).classList.remove("darken");
-        });
+          const texts = document.querySelectorAll('.text-item');
+          texts.forEach(text => text.classList.remove('active'));
 
-        // Show the selected div
-        document.getElementById(buttonId).classList.add("darken");
-        document.getElementById(buttonId).classList.remove("normal");
-        console.log(buttonId);
-        document.getElementById(divId).classList.remove("hide");
-        document.getElementById(divId).classList.add("show");
+          document.getElementById(`info${number}`).classList.add('active');
+      }
+
+      // Función para abrir el popup y mostrar la imagen
+      function openPopup(imageSrc) {
+          const popup = document.getElementById("imagePopup");
+          const popupImage = document.getElementById("popupImage");
+          
+          popupImage.src = imageSrc; // Cambia la imagen al src de la imagen clicada
+          popup.style.display = "flex"; // Muestra el popup
+      }
+
+      // Función para cerrar el popup
+      function closePopup() {
+          const popup = document.getElementById("imagePopup");
+          popup.style.display = "none"; // Oculta el popup
       }
     </script>
   </body>

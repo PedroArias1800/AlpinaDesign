@@ -26,6 +26,229 @@ body {
     background-repeat: no-repeat;
 }
 
+/* CSS de Start */
+.start {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;  /* Ancho completo del viewport */
+    height: 100vh; /* Alto completo del viewport */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%); /* Centra el video */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.startSections{
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(158, 151, 151, 0.4);
+    position: absolute;
+    bottom: 10vh;
+    z-index: 1;
+    transition: all .35s ease;
+    border: 2px solid rgba(255, 255, 255, 0.319);
+}
+
+.startSections a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.startSections a p{
+    padding: 1vh 3vw;
+    width: 8vw;
+}
+.startSections:hover{
+    border: 2px solid white;
+    background-color: rgba(158, 151, 151, 0.803);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+
+/* CSS de AboutBoquete */
+.aboutBoqueteAlpina{
+    justify-content: end !important;
+    padding-right: 3vw ;
+}
+.aboutBoqueteAlpina img{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1vh 2vw;
+}
+.aboutBoquete {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;  /* Ancho completo del viewport */
+    height: 100vh; /* Alto completo del viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.aboutBoqueteSections{
+    margin: auto;
+    border-radius: 20px;
+    text-align: end;
+    background-color: rgba(158, 151, 151, 0.4);
+    position: absolute;
+    bottom: 5vh;
+    right: 4vw;
+    z-index: 1;
+    transition: all .35s ease;
+    border: 2px solid rgba(255, 255, 255, 0.319);
+}
+
+.aboutBoqueteSections a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.aboutBoqueteSections a p{
+    padding: 1vh 3vw;
+    width: 8vw;
+}
+.aboutBoqueteSections:hover{
+    border: 2px solid white;
+    background-color: rgba(158, 151, 151, 0.803);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+
+/* CSS de Tours */
+.tours {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;  /* Ancho completo del viewport */
+    height: 100vh; /* Alto completo del viewport */
+}
+.toursInformation{
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonGroup {
+    width: 25%;
+    margin: auto;
+    gap: 10px;
+}
+
+.buttonGroup button {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1vh 2vw;
+    margin: 0.5vh 0%;
+    cursor: pointer;
+    background-color: rgba(217, 217, 217, 0.75);;
+    color: #2c2c2c;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.35s ease;
+}
+
+.buttonGroup button:hover {
+    color: white;
+    background-color: #13421a;
+}
+
+.buttonGroup button.active {
+    color: white;
+    background-color: #13421a; /* Color diferente para el botón activo */
+}
+
+.textContainer {
+    margin: auto;
+    width: 65%;
+    margin-top: 20px;
+    background-color: rgba(217, 217, 217, 0.75);
+    font-size: 1.3rem;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    filter: drop-shadow(2px 5px 10px rgba(0, 0, 0,  .6));
+}
+
+.text-item {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.text-item img {
+    width: 80%;
+    margin: 2% 10%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(2px 5px 10px rgba(0, 0, 0,  .6));
+    cursor: pointer;
+}
+.text-item p {
+    width: 96%;
+    margin: 0 2%;
+    text-align: justify;
+}
+
+.text-item.active {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+
+
+/* Estilos para el popup */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup img {
+    max-width: 90%; /* Ajuste para que la imagen no sobrepase la pantalla */
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
 .inicio {
     height: 100% !important;
     background: linear-gradient(to bottom,
@@ -127,6 +350,22 @@ select {
     margin-left: 5%;
     margin-top: 25vh;
 }
+@media (max-width: 700px) {
+    .AboutSections{
+        width: 80%;
+        max-width: 80%;
+        min-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .AboutSections a {
+        padding: 0% !important;
+    }
+    .AboutSections a p{
+        padding: 3% !important;
+        font-size: 1.4rem !important;
+    }
+}
 
 .AboutSections a {
     text-decoration: none;
@@ -215,7 +454,8 @@ input[type="text"] {
     border-bottom: 2px solid #d3d3d3;
     font-size: large;
     width: 100%;
-    margin: 2vh 0;
+    margin: 1.5vh 0;
+    padding: 0.5vh 0.5vw;
 }
 
 /* .formSignUp input[type='text']{
@@ -236,13 +476,28 @@ input[type="submit"] {
     border-radius: 10px;
     margin: 4vh 0 2vh 0;
     cursor: pointer;
+    transition: all .35s ease;
+}
+input[type="submit"]:hover{
+    background-color: #13421a;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
 .formLogin a,
 .formSignUp a {
     color: black;
     font-size: medium;
+    text-decoration-color: transparent;
+    transition: all .35s ease;
+    font-weight: bold;
 }
+.formLogin a:hover,
+.formSignUp a:hover {
+    color: #13421a;
+    text-decoration-color: #134d2d;
+}
+
+
 
 @media (max-width: 636px) {
 
@@ -1313,7 +1568,7 @@ input[type="submit"] {
 
 .esenciaImg {
     width: 100%;
-    height: 45vh;
+    height: 42.9vh;
     display: flex;
     align-items: center;
     overflow-x: auto;
